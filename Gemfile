@@ -3,6 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.4'
 
+# helpers
+# autoprefixer is a helper for JS
+gem 'autoprefixer-rails', '10.2.5'
+gem 'font-awesome-sass', '~> 5.6.1'
+gem 'simple_form'
+
+# pundit
+gem 'pundit'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.4'
 # Use postgresql as the database for Active Record
