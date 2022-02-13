@@ -1,0 +1,10 @@
+<h1><%= @experience.title %></h1>
+
+    <li><%= @experience.title %></li>
+    <li><%= @experience.description %></li>
+    <li><%= @experience.date %></li>
+    <li><%= @experience.status %></li>
+    <li><%= @experience.skills %></li>
+
+<%= link_to "Edit Job Experience", edit_experience_path, class: 'btn btn-secondary' %>
+<%= link_to "Remove Job Experience", experience_path, method: :delete, data: { confirm: "Are you sure you want to remove this?"}, class: 'btn btn-secondary' %>

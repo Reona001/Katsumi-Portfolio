@@ -1,0 +1,14 @@
+<h1>My Experiences</h1>
+
+<% @experiences.each do |experience| %>
+  <ul>
+    <li><%= experience.title %></li>
+    <li><%= experience.description %></li>
+    <li><%= experience.date %></li>
+    <li><%= experience.status %></li>
+    <li><%= experience.skills %></li>
+    <%= link_to "Details", experience_path(experience), class: 'btn btn-secondary' %>
+  </ul>
+<% end %>
+
+ <%= link_to "Back to profile", user_path(current_user.id), class: 'btn btn-secondary' %>

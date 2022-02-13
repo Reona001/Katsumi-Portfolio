@@ -10,8 +10,7 @@ class ProjectsController < ApplicationController
     @project = Project.new
   end
 
-  def show
-  end
+  def show; end
 
   def create
     @project = Project.new(project_params)
@@ -27,24 +26,24 @@ class ProjectsController < ApplicationController
 
   def update
     if @project.update(project_params)
-      redirect_to project_path(@project), notice: "Project Created!"
+      redirect_to project_path(@project), notice: 'Project Created!'
     else
       render :new
     end
   end
 
-    def destroy
-      @project.destroy
-      redirect_to projects_path, notice: "Project Removed!"
-    end
+  def destroy
+    @project.destroy
+    redirect_to projects_path, notice: 'Project Removed!'
+  end
 
-    private
+  private
 
-    def find_project
-      @project = Project.find(params[:id])
-    end
+  def find_project
+    @project = Project.find(params[:id])
+  end
 
-    def project_params
-      params.require(:project).permit(:title, :created, :created_by, :stack_used, :url, :git_repo_url)
-    end
+  def project_params
+    params.require(:project).permit(:title, :created, :created_by, :stack_used, :url, :git_repo_url)
+  end
 end

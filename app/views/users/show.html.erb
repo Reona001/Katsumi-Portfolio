@@ -1,3 +1,7 @@
 <h1><%= @user.username %></h1>
 <p><%= @user.image %></p>
 <%= link_to "Edit profile", edit_user_path, class: 'btn btn-secondary' %>
+<%= link_to "Add a project to your portfolio", new_project_path, class: 'btn btn-secondary' %>
+<%= link_to "Add a job experience", new_experience_path, class: 'btn btn-secondary' %>
+<%= link_to "View experiences", experiences_path, class:'btn btn-secondary' %>
+<%= link_to "Back to top", root_path, class: 'btn btn-secondary' %>

@@ -1,2 +1,4 @@
 <h1>Edit Project</h1>
  <%= render 'components/project-form' %>
+<%= link_to 'Nevermind Go Back', project_path(@project), class: 'btn btn-secondary' %>
+<%= link_to "Back to profile", user_path(current_user.id), class: 'btn btn-secondary' %>
