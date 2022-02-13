@@ -1,0 +1,12 @@
+<h1><%= @project.title %></h1>
+
+<ul>
+  <li><%= @project.created %></li>
+  <li><%= @project.created_by %></li>
+  <li><%= @project.stack_used %></li>
+  <li><%= @project.url %></li>
+  <li><%= @project.git_repo_url %></li>
+</ul>
+
+ <%= link_to "Back to top", projects_path, class: 'btn btn-secondary' %>
+ <%= link_to "Remove this project", project_path(@project), method: :delete, class: 'btn btn-secondary' %>

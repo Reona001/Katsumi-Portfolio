@@ -1,0 +1,16 @@
+<h1>Projects#index</h1>
+
+<% @projects.each do |project| %>
+<ul>
+  <li><%= project.title %></li>
+  <li><%= project.created %></li>
+  <li><%= project.created_by %></li>
+  <li><%= project.stack_used %></li>
+  <li><%= project.url %></li>
+  <li><%= project.git_repo_url %></li>
+  <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary' %></li>
+</ul>
+<% end %>
+
+
+<p><%= link_to "Add a new project", new_project_path, class: 'btn btn-secondary' %></p>
