@@ -8,5 +8,6 @@
   <li><%= @project.git_repo_url %></li>
 </ul>
 
- <%= link_to "Back to top", projects_path, class: 'btn btn-secondary' %>
+ <%= link_to "Edit", edit_project_path(@project), class: "btn btn-secondary" %>
  <%= link_to "Remove this project", project_path(@project), method: :delete, class: 'btn btn-secondary' %>
+ <%= link_to "Back to top", projects_path, class: 'btn btn-secondary' %>
