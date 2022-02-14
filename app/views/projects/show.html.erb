@@ -1,5 +1,5 @@
 <h1><%= @project.title %></h1>
-<img class="project-image" src="<%= @project.photo.attached? ? cl_image_path(current_user.project.photo.key) : image_path('colabo.png') %>">
+<img class="project-image" src="<%= @project.photo.attached? ? cl_image_path(@project.photo.key) : image_path('colabo.png') %>">
 <ul>
   <li><%= @project.created %></li>
   <li><%= @project.created_by %></li>

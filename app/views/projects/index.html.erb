@@ -4,7 +4,7 @@
 <p><%= link_to "Profile", user_path(@user), class: 'btn btn-secondary'%></p>
 
 <% @projects.each do |project| %>
-<img class="project-image" src="<%= project.photo.attached? ? cl_image_path(current_user.project.photo.key) : image_path('colabo.png') %>">
+<img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
 <ul>
   <li><%= project.title %></li>
   <li><%= project.created %></li>
