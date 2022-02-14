@@ -1,9 +1,10 @@
 <h1>Projects#index</h1>
+<p><%= link_to "Add a new project", new_project_path, class: 'btn btn-secondary' %></p>
 
 <p><%= link_to "Profile", user_path(@user), class: 'btn btn-secondary'%></p>
 
 <% @projects.each do |project| %>
-<%= cl_image_tag("z3qaiognghkh7vjqbeuh", width: 400, height: 300, crop: :fill)%>
+<img class="project-image" src="<%= project.photo.attached? ? cl_image_path(current_user.project.photo.key) : image_path('colabo.png') %>">
 <ul>
   <li><%= project.title %></li>
   <li><%= project.created %></li>
@@ -14,6 +15,3 @@
   <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary' %></li>
 </ul>
 <% end %>
-
-
-<p><%= link_to "Add a new project", new_project_path, class: 'btn btn-secondary' %></p>
