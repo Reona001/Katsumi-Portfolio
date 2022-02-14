@@ -1,4 +1,7 @@
 <h1><%= @user.username %></h1>
+<%# replace colabo png with default avatar photo %>
+<img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
+
 <p><%= @user.image %></p>
 <%= link_to "Edit profile", edit_user_path, class: 'btn btn-secondary' %>
 <%= link_to "Add a project to your portfolio", new_project_path, class: 'btn btn-secondary' %>
