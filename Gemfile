@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.4'
+#image hosting
+gem 'dotenv-rails', groups: [:development, :test]
 
 # helpers
 # autoprefixer is a helper for JS
