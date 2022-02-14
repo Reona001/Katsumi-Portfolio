@@ -3,6 +3,7 @@
 <p><%= link_to "Profile", user_path(@user), class: 'btn btn-secondary'%></p>
 
 <% @projects.each do |project| %>
+<%= cl_image_tag("z3qaiognghkh7vjqbeuh", width: 400, height: 300, crop: :fill)%>
 <ul>
   <li><%= project.title %></li>
   <li><%= project.created %></li>
