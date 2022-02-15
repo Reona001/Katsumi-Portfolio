@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :users, only: [:show, :edit, :update]
   resources :experiences, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  resources :chatrooms, only: :show
   # if something has sub-elements nest it using do
 end
