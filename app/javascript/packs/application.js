@@ -4,6 +4,7 @@
 // that code so it'll be compiled.
 
 // import initChatroomCable from "../chatroom_channel"
+import jquery_ujs
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
