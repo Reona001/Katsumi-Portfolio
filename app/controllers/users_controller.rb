@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update]
 
   def show
-    @chatroom = Chatroom.find(params[:id])
+    # @chatroom = Chatroom.find(params[:id])
   end
 
   def edit; end

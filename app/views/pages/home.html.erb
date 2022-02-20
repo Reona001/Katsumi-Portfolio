@@ -1,9 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<% if current_user.project_ids.count > 0 %>
+<% if !current_user %>
   <p><%= link_to "Projects", projects_path, class: 'btn btn-secondary' %></p>
-<% elsif !current_user %>
+<% elsif current_user.project_ids.count > 0 %>
  <p><%= link_to "Log in to see projects", new_user_session_path, class: 'btn btn-secondary' %></p>
 <% else %>
   <p><%= link_to "Create a Project", new_project_path, class: 'btn btn-secondary' %></p>
