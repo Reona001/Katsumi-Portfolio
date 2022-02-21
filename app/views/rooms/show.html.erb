@@ -13,13 +13,14 @@
         <div class="chat-message-container">
           <div class="row no-gutters">
             <div class="col-auto text-center">
-                <img src="<%= room_message.user.gravatar_url %>" class="avatar" alt="">
-                <%# <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('avatar_coming.png') %>
-                <p><%= @user.username %></p>
+              <img class="user-profile-image" src="<%= room_message.user.photo.attached? ? cl_image_path(room_message.user.photo.key) : image_path('avatar_coming.png') %>">
+                <%# <img src="<%= room_message.user.gravatar_url %>
+                <%# <% <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('avatar_coming.png') %>
             </div>
 
             <div class="col">
               <div class="message-content">
+                <strong><%= room_message.user.username %></strong>
                 <p class="mb-1">
                   <%= room_message.message %>
                 </p>
