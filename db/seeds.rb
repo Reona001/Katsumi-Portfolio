@@ -8,14 +8,23 @@
 
 
 puts "Cleaning database"
+Message.destroy_all
+RoomMessage.destroy_all
+Project.destroy_all
 User.destroy_all
-# Project.destroy_all
 
 reona = User.create!(
   username: "Reona",
   email: "rkasuya12@gmail.com",
   password: "123456"
 )
+
+bob = User.create!(
+  username: "bob",
+  email: "bob@gmail.com",
+  password: "123456"
+)
+
 
 Project.create!(
   user: reona,

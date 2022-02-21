@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+#redis gems
+gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rails'
+# config:  https://hixonrails.com/ruby-on-rails-tutorials/ruby-on-rails-redis-installation-and-configuration/
+# tutorial: https://slacker.ro/2019/04/04/creating-a-chat-application-from-scratch-using-rails-and-websockets/
 ruby '2.7.4'
 # slacker messenger
 gem 'jquery-rails'
