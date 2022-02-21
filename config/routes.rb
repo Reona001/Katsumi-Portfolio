@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+
+  #  // Slacker Message Tutorial //
+  # resources controller: :rooms, action: :index
+  resources :room_messages
+  resources :rooms
+
+
   # delete "logout", to: "sessions#destroy"
   # devise_scope :user do
   #   get "/sign_out" => "sessions#destroy"
@@ -7,7 +15,6 @@ Rails.application.routes.draw do
 
   # devise_for :users
 
-  devise_for :users
   get '/profile', to: "users#profile"
 
   root to: 'pages#home' # this sets localhost:3000/pages/home as root path
