@@ -22,5 +22,7 @@ class ChatroomsController < ApplicationController
     @chatrooms = Chatroom.all
     @current_user = current_user
     redirect_to '/users/sign_in' unless @current_user
+    # @chatrooms.public_rooms
+    @user = User.all_except(@current_user)
   end
 end
