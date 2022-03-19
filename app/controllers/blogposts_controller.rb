@@ -11,15 +11,18 @@ class BlogpostsController < ApplicationController
   end
 
   def create
-
-    @blogpost = Blogpost.new(blogpost_params)
+    @user = current_user
+    @blogpost = Blogpost.create!(title: 'Title', description:'Description', user: @user)
+    @content = Content.create!(user: @user, title: 'Title', content: 'Content', stack: 'Stack')
+    @blogpost = Blogpost.new(blogpost_params, @content.content_id)
     @blogpost.user = current_user
-    @content = Content.new
-    @content.user = current_user
+
+
+    # @content.user = current_user
     # @content = Content.new(content_params)
     # @content.user = current_user
 
-    if @blogpost.save
+    if @blogpost.save && @content.save
       redirect_to blogposts_path
     else
       render :new
