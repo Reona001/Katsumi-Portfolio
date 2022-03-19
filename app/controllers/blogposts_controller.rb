@@ -4,6 +4,7 @@ class BlogpostsController < ApplicationController
   end
 
   def new
+    @blogpost = Blogpost.new
   end
 
   def create
