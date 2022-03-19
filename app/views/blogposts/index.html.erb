@@ -3,4 +3,10 @@
 <ul>
   <li>We want to show all the blogposts with its content models</li>
   <li>Should incorporate beautiful images and javascript</li>
+
+  <% @blogposts.each do |blogpost| %>
+    <%= blogpost.title %>
+    <%= blogpost.description %>
+  <% end %>
+  <%= link_to "Add a post", new_blogpost_path, class: 'btn btn-secondary' %>
 </ul>
