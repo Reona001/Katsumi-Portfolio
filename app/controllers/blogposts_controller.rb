@@ -7,6 +7,8 @@ class BlogpostsController < ApplicationController
   def new
     @blogpost = Blogpost.new
     @blogposts = Blogpost.all
+    @post = Post.new
+    @posts = Post.all
   end
 
   def create

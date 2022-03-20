@@ -21,7 +21,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   resources :experiences, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :blogposts
-  resources :contents
+  resources :posts
 
   resources :chatrooms, only: [:show, :new, :create, :index] do
     resources :messages, only: [:create, :destroy]

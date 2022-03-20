@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_20_053830) do
+ActiveRecord::Schema.define(version: 2022_03_20_061908) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -91,6 +91,15 @@ ActiveRecord::Schema.define(version: 2022_03_20_053830) do
     t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
+  create_table "posts", force: :cascade do |t|
+    t.string "sectiontitle"
+    t.text "content"
+    t.bigint "blogpost_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["blogpost_id"], name: "index_posts_on_blogpost_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "created"
@@ -142,6 +151,7 @@ ActiveRecord::Schema.define(version: 2022_03_20_053830) do
   add_foreign_key "experiences", "users"
   add_foreign_key "messages", "chatrooms"
   add_foreign_key "messages", "users"
+  add_foreign_key "posts", "blogposts"
   add_foreign_key "projects", "users"
   add_foreign_key "room_messages", "rooms"
   add_foreign_key "room_messages", "users"

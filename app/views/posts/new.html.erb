@@ -1,0 +1,20 @@
+<div class="w-150 mx-auto shadow p-5 py-5 my-5 bg-body rounded">
+
+
+  <h1><%= @blogpost.title %></h1>
+  <p>Description: <%= @blogpost.description %></p>
+  <p>ID: <%= @blogpost.id %></p>
+  <%# <%= link_to "Add a post", new_post_path(blogpost.id), class: 'btn btn-secondary' %>
+
+  <%# <%= render 'components/post-form' %>
+
+    <%= simple_form_for([@post, @blogpost]) do |f| %>
+    <%= f.input :sectiontitle %>
+    <%= f.input :content %>
+    <%# <%= f.input :photo, as: :file, class: "btn btn-secondary"%>
+    <%= f.submit class: "btn btn-secondary" %>
+  <% end %>
+
+
+
+</div>
