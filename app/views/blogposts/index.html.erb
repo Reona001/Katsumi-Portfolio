@@ -5,8 +5,9 @@
   <li>Should incorporate beautiful images and javascript</li>
 
   <% @blogposts.each do |blogpost| %>
-    <%= blogpost.title %>
-    <%= blogpost.description %>
+
+    <h4><%= blogpost.title %></h4>
+    <p><%= blogpost.description %></p>
   <% end %>
   <%= link_to "Add a post", new_blogpost_path, class: 'btn btn-secondary' %>
 </ul>

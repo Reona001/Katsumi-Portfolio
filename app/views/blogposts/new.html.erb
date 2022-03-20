@@ -3,8 +3,19 @@
     <div class="w-150 mx-auto shadow p-5 py-5 my-5 bg-body rounded">
       <h2>Add Your Blog Posts</h2>
       <%= render 'components/blog-form' %>
-      <%# <%= render 'components/content-form' %>
     </div>
+      <div class="w-150 mx-auto shadow p-5 py-5 my-5 bg-body rounded">
+        <h1>Blog Post Page</h1>
+          <li>This is where we want the nested form</li>
+          <% @blogposts.each do |blogpost| %>
+            <h4><%= blogpost.title %></h4>
+            <p><%= blogpost.description %></p>
+          <% end %>
+
+          <%= link_to "Add a post", new_blogpost_path, class: 'btn btn-secondary' %>
+          </ul>
+      </div>
+
      <%= link_to "Back to top", projects_path, class: 'btn btn-secondary' %>
      <%= link_to "Back to profile", user_path(current_user.id), class: 'btn btn-secondary' %>
   </div>

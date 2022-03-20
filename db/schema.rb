@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_19_080822) do
+ActiveRecord::Schema.define(version: 2022_03_20_053830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,11 +46,10 @@ ActiveRecord::Schema.define(version: 2022_03_19_080822) do
   create_table "blogposts", force: :cascade do |t|
     t.string "title"
     t.text "description"
+    t.text "content"
     t.bigint "user_id", null: false
-    t.bigint "content_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["content_id"], name: "index_blogposts_on_content_id"
     t.index ["user_id"], name: "index_blogposts_on_user_id"
   end
 
@@ -58,16 +57,6 @@ ActiveRecord::Schema.define(version: 2022_03_19_080822) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "contents", force: :cascade do |t|
-    t.string "title"
-    t.text "content"
-    t.string "stack"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_contents_on_user_id"
   end
 
   create_table "destinations", force: :cascade do |t|
@@ -148,9 +137,7 @@ ActiveRecord::Schema.define(version: 2022_03_19_080822) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "blogposts", "contents"
   add_foreign_key "blogposts", "users"
-  add_foreign_key "contents", "users"
   add_foreign_key "destinations", "users"
   add_foreign_key "experiences", "users"
   add_foreign_key "messages", "chatrooms"
