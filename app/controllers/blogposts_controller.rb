@@ -7,8 +7,10 @@ class BlogpostsController < ApplicationController
   def new
     @blogpost = Blogpost.new
     @blogposts = Blogpost.all
-    @post = Post.new
-    @posts = Post.all
+    @posts = @blogposts.posts.all
+    # @post = Post.new
+    # @posts = Post.all
+    @assignments = Assignment.all
   end
 
   def create

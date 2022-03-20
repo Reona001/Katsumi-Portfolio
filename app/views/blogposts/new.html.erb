@@ -10,20 +10,28 @@
           <% @blogposts.each do |blogpost| %>
             <h1><%= blogpost.title %></h1>
             <p><%= blogpost.description %></p>
-          <%= link_to "Add a post", new_post_path(blogpost), class: 'btn btn-secondary' %>
+            <p><%= blogpost.id %></p>
+              <% blogpost.posts.each do |post| %>
+                <h4><%= post.sectiontitle %></h4>
+                <p><%= post.content %></p>
+              <% end %>
+              <%= link_to "Add a post", new_post_path(blogpost), class: 'btn btn-secondary' %>
           <% end %>
 
-          <% @posts.each do |post| %>
-          <h4><%= post.sectiontitle %></h4>
-          <p><%= post.content %></p>
-          <% end %>
 
-          <%= render 'components/post-form' %>
+          <%# <%= render 'components/post-form' %>
           </ul>
 
       </div>
 
      <%= link_to "Back to top", projects_path, class: 'btn btn-secondary' %>
      <%= link_to "Back to profile", user_path(current_user.id), class: 'btn btn-secondary' %>
+  </div>
+
+  <div>
+    <% @assignments.each do |assignment| %>
+    <%= assignment.blogpost_id %>
+    <%= assignment.post_id %>
+    <% end %>
   </div>
 </div>
