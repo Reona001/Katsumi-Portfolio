@@ -10,7 +10,7 @@
   <li><%= project.created %></li>
   <li><%= project.created_by %></li>
   <li><%= project.stack_used %></li>
-  <li><%= project.url %></li>
+  <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
   <li><%= project.git_repo_url %></li>
   <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary' %></li>
 </ul>

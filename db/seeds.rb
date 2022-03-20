@@ -10,6 +10,7 @@
 puts "Cleaning database"
 Message.destroy_all
 RoomMessage.destroy_all
+Blogpost.destroy_all
 Project.destroy_all
 User.destroy_all
 
@@ -33,7 +34,17 @@ Project.create!(
   created_by: "Team including Byron, Erika, Babin, Reona",
   stack_used: "Ruby on Rails, Javascript",
   url: "https://colabo-social.herokuapp.com/",
-  git_repo_url: "nil"
+  git_repo_url: "https://github.com/RBBE-corp/colabo"
+)
+
+Project.create!(
+  user: reona,
+  title: "TwoByFour",
+  created: "February 15th 2022",
+  created_by: "Team including Byron, Erika, Babin, Reona",
+  stack_used: "Ruby on Rails, Javascript, Google Cloud Audio Recognition",
+  url: "https://twobyfour-app.herokuapp.com/",
+  git_repo_url: "https://github.com/RBBE-corp/twobyfour"
 )
 
 puts "Sample project created!"
