@@ -1,11 +1,11 @@
 
-<% @users.each do |user| %>
+<p>Rendered from _profile.html</p>
 
-<h1><%= user.username %></h1>
+<h1><%= @user.username %></h1>
 <%# replace colabo png with default avatar photo %>
-<img class="user-profile-image" src="<%= user.photo.attached? ? cl_image_path(user.photo.key) : image_path('colabo.png') %>">
+<img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
 
-<p><%= user.image %></p>
+<p><%= @user.image %></p>
 
 
 <div class="experiences-container">
@@ -15,5 +15,3 @@
 <div class="projects-container">
   <p>Render projects in a card carousel</p>
 </div>
-
-<% end %>
