@@ -1,0 +1,19 @@
+
+<% @users.each do |user| %>
+
+<h1><%= user.username %></h1>
+<%# replace colabo png with default avatar photo %>
+<img class="user-profile-image" src="<%= user.photo.attached? ? cl_image_path(user.photo.key) : image_path('colabo.png') %>">
+
+<p><%= user.image %></p>
+
+
+<div class="experiences-container">
+  <p>Render job experiencs in a card carousel</p>
+</div>
+
+<div class="projects-container">
+  <p>Render projects in a card carousel</p>
+</div>
+
+<% end %>

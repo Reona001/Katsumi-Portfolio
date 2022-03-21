@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :find_user, only: [:show, :edit, :update]
+  before_action :authenticate_user!, except: [:show]
 
   def show
     # @chatroom = Chatroom.find(params[:id])

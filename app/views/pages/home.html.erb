@@ -1,6 +1,9 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
+<%= render 'components/profile' %>
+
+
 <% if !current_user %>
   <p><%= link_to "Projects", projects_path, class: 'btn btn-secondary' %></p>
 <% elsif current_user.project_ids.count < 0 %>
