@@ -13,4 +13,19 @@
 @import "pages/index";
 @import "components/show";
 @import "rooms";
-@import "room_messages.scss"
+@import "room_messages.scss";
+
+// Chatroom CSS partials
+@import "chatrooms.scss";
+@import "messages.scss";
+
+
+// Blogpost CSS partials
+@import "blogposts.scss";
+@import "posts.scss";
+
+// General CSS partials
+@import "experiences.scss";
+@import "projects.scss"
+
+//Don't place semicollon on the last import

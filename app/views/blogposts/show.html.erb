@@ -1,0 +1,14 @@
+<div class="w-150 mx-auto shadow p-5 py-5 my-5 bg-body rounded">
+
+<h1><%= @blogpost.title %></h1>
+<p><%= @blogpost.description %></p>
+<p><%= @blogpost.id %></p>
+<% @blogpost.posts.each do |post| %>
+<h4><%= post.sectiontitle %></h4>
+<p><%= post.content %></p>
+<p><%= post.blogpost_id %></p>
+<% end %>
+
+<%= link_to "Back to blogs", blogposts_path, class: 'btn btn-secondary' %>
+
+</div>

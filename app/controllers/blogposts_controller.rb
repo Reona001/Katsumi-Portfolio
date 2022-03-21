@@ -4,6 +4,14 @@ class BlogpostsController < ApplicationController
     @blogposts = Blogpost.all
   end
 
+  def show
+    @blogpost = Blogpost.find(params[:id])
+    # @blogpost.posts = @posts
+    # @assignments = Assignment.all
+    # @post = Post.new
+    # @posts = Post.all.find_by(@blogpost.id)
+  end
+
   def new
     @blogpost = Blogpost.new
     @blogposts = Blogpost.all
