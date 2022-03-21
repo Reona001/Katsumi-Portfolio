@@ -1,11 +1,27 @@
 
-<p>Rendered from _profile.html</p>
+<div class="banner-top-image">
 
-<h1><%= @user.username %></h1>
-<%# replace colabo png with default avatar photo %>
-<img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
+</div>
 
-<p><%= @user.image %></p>
+<div class="profile-banner">
+  <div class="profile-image-container">
+    <%# replace colabo png with default avatar photo %>
+    <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
+    <%= @user.image %>
+      <div class="name-title">
+        <h2><%= @user.username %> Kasuya</h2>
+        <h4>Web App Developer</h4>
+        <%# Use fontawesome ver. 5.15.4 %>
+        <div class="icon-container">
+          <i class="fab fa-github-alt"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-facebook"></i>
+        </div>
+
+      </div>
+  </div>
+</div>
 
 
 <div class="experiences-container">
