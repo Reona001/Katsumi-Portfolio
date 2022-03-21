@@ -14,7 +14,9 @@
               <% blogpost.posts.each do |post| %>
                 <h4><%= post.sectiontitle %></h4>
                 <p><%= post.content %></p>
+                <p><%= post.blogpost_id %></p>
               <% end %>
+
               <%= link_to "Add a post", new_post_path(blogpost), class: 'btn btn-secondary' %>
           <% end %>
 
