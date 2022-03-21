@@ -13,7 +13,7 @@
     <%= f.input :content %>
     <%# <%= f.collection_select :blogpost_id, Blogpost.order(:title), :id, :name %>
     <%# <%= f.input :photo, as: :file, class: "btn btn-secondary"%>
-    <%= f.input :blogpost_id %>
+    <%= f.input :blogpost_id, input_html: { value: @blogpost.id } %>
     <%= f.submit class: "btn btn-secondary" %>
   <% end %>
 
