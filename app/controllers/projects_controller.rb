@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :find_project, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:home, :index, :show]
+  # Devise adding this will make certain pages available to visitors
 
   def index
     @projects = Project.all
