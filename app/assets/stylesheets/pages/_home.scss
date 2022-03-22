@@ -2,12 +2,12 @@
 
 // Banner Video
 .banner-top-video {
-  border-top: solid 8px rgb(1, 193, 246);
-  top: 20px;
+  border-top: solid 8px rgb(81, 123, 134);
+
 
   video {
     display: block;
-    width: 100vw;
+    width: 100%;
     height: auto;
     top: 120px;
   }
@@ -28,17 +28,17 @@
 // Profile Banner Content
 .profile-banner {
   background-color: #fafafa;
-  width: 100vw;
+  width: 100%;
   height: auto;
   box-shadow: 1px 1px 3px 3px#3b3b3b55;
   position: relative;
-  top: -1080px;
+  top: -1072px;
 
 
   // Email Me Button //
 .contact-me {
   position: absolute;
-  left: 1200px;
+  left: 1330px;
   top: 70px;
   background-color: rgb(0, 139, 219);
   width: 146px;
@@ -118,5 +118,50 @@
   }
   i:hover {
     background-color: rgb(110, 110, 110);
+  }
+}
+
+
+/// Flex Box Management ///
+.content-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.master-flex-container {
+  position: absolute;
+    top: 298px;
+    min-width: 1200px;
+    // background-color: #2844c2;
+    display: flex;
+    flex-direction: row;
+
+  .flex-child-main-column {
+    // background-color: aqua;
+    width: 800px;
+    height: auto;
+
+    .inner-card {
+      border-radius: 3px;
+      margin: 16px;
+      margin-right: 0px;
+      background-color: whitesmoke;
+      padding: 16px;
+      box-shadow: 1px 1px 3px 3px#3b3b3b55;
+    }
+  }
+  .flex-child-right-column {
+    // background-color: cadetblue;
+    width: 300px;
+    height: auto;
+
+    .inner-card {
+      border-radius: 3px;
+      margin: 16px;
+      background-color: whitesmoke;
+      padding: 16px;
+      box-shadow: 1px 1px 3px 3px#3b3b3b55;
+    }
   }
 }
