@@ -1,3 +1,18 @@
+// Header
+.logo-image {
+    margin-left: 28px;
+    margin-right: 26px;
+    width: 33px;
+    height: 27px;
+    object-fit: cover;
+    object-position: 2px -1px;
+    // border: 2px solid #000000;
+    transform: scale(5);
+}
+
+
+
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";

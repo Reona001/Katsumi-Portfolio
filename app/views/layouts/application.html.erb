@@ -29,7 +29,13 @@
 
 
 
-        <a class="navbar-brand" href="/"> <img src="<% cl_image_path('portfolio.png') %>"> </a>
+        <a class="navbar-brand" href="/">
+          <div class="logo-test">
+            <img class="logo-image" src="<%= image_path('portfolio.png') %>">
+          </div>
+        </a>
+
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
