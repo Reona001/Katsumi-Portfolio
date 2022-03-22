@@ -1,14 +1,45 @@
 // Specific CSS for your home-page
 
+// Banner Video
+.banner-top-video {
+  border-top: solid 8px rgb(1, 193, 246);
+  top: 20px;
 
+  video {
+    display: block;
+    width: 100vw;
+    height: auto;
+    top: 120px;
+  }
+
+  video.scale2{
+  -moz-transform:scale(3);
+  -webkit-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  -ms-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+}
+
+
+
+
+// Profile Banner Content
 .profile-banner {
   background-color: #fafafa;
-  width: auto;
+  width: 100vw;
   height: auto;
   box-shadow: 1px 1px 3px 3px#3b3b3b55;
+  position: relative;
+  top: -1080px;
 
 
+  // Email Me Button //
 .contact-me {
+  position: absolute;
+  left: 1200px;
+  top: 70px;
   background-color: rgb(0, 139, 219);
   width: 146px;
   height: 40px;
@@ -34,7 +65,7 @@
   .contact-me:hover {
       background-color: rgb(0, 89, 141);
     }
-
+// button end here //
 
 
   h2 {
@@ -65,7 +96,7 @@
 }
 
 .name-title {
-  background-color: rgb(245, 245, 245);
+  // background-color: rgb(245, 245, 245);
   width: auto;
   margin: auto;
 }
