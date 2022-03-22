@@ -1,6 +1,9 @@
+
 <%= render 'components/profile' %>
 
 
+<%
+=begin  %>
 <% if !current_user %>
   <p><%= link_to "Projects", projects_path, class: 'btn btn-secondary' %></p>
 <% elsif current_user.project_ids.count < 0 %>
@@ -8,6 +11,5 @@
 <% else %>
   <p><%= link_to "Create a Project", new_project_path, class: 'btn btn-secondary' %></p>
 <% end %>
-
-
-<h1>This page will be for visitors to see portfolio owners profile and experiences</h1>
+<%
+=end  %>
