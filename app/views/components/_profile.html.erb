@@ -1,95 +1,97 @@
 
-<div class="banner-top-video">
-  <video autoplay loop muted>
-    <source src=<%= image_path('spaceneedle.mp4')%> type="video/mp4">
-  </video>
-</div>
-
-<%# PROFILE BANNER %>
-<div class="profile-banner">
-  <div class="profile-image-container">
-    <%# replace colabo png with default avatar photo %>
-    <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
-    <%= @user.image %>
-      <div class="name-title">
-        <h2><%= @user.username %> Kasuya</h2>
-        <h4>Full-Stack Developer</h4>
-        <%# Use fontawesome ver. 5.15.4 %>
-        <div class="icon-container">
-          <a href="https://www.linkedin.com/in/reonakasuya94/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/Reona001"><i class="fab fa-github-alt"></i></a>
-          <a href="https://www.instagram.com/iter_vitae_reo/?hl=en"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/kasuya.reona/"><i class="fab fa-facebook"></i></a>
-        </div>
-
-        <%# Contact Me Button %>
-        <div class="contact-me">
-          <a class="button" href="mailto:reon.kasuya@gmail.com">
-           <p class="inner-text"><span class="fas fa-paper-plane"></span>Contact Me</p>
-          </a>
-        </div>
-      </div>
+<div class="home-container">
+  <div class="banner-top-video">
+    <video autoplay loop muted id="myVideo">
+      <source src=<%= image_path('spaceneedle.mp4')%> type="video/mp4">
+    </video>
   </div>
-</div>
-<%# END %>
-<div class="content-container">
-  <div class="master-flex-container">
 
-    <div class="flex-child-main-column">
-      <div class="inner-card">
-        <h2>About Me</h2>
-        <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+  <%# PROFILE BANNER %>
+  <div class="profile-banner">
+    <div class="profile-image-container">
+      <%# replace colabo png with default avatar photo %>
+      <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
+      <%= @user.image %>
+        <div class="name-title">
+          <h2><%= @user.username %> Kasuya</h2>
+          <h4>Full-Stack Developer</h4>
+          <%# Use fontawesome ver. 5.15.4 %>
+          <div class="icon-container">
+            <a href="https://www.linkedin.com/in/reonakasuya94/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/Reona001"><i class="fab fa-github-alt"></i></a>
+            <a href="https://www.instagram.com/iter_vitae_reo/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/kasuya.reona/"><i class="fab fa-facebook"></i></a>
+          </div>
+
+          <%# Contact Me Button %>
+          <div class="contact-me">
+            <a class="button" href="mailto:reon.kasuya@gmail.com">
+            <p class="inner-text"><span class="fas fa-paper-plane"></span>Contact Me</p>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <%# END %>
+  <div class="content-container">
+    <div class="master-flex-container">
+
+      <div class="flex-child-main-column">
+        <div class="inner-card">
+          <h2>About Me</h2>
+          <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+        </div>
+
+        <div class="inner-card">
+          <h2>Latest Projects</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+
+            <% @projects.each do |project| %>
+              <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
+              <ul>
+                <li><%= project.title %></li>
+                <li><%= project.created %></li>
+                <li><%= project.created_by %></li>
+                <li><%= project.stack_used %></li>
+                <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
+                <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
+                <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
+              </ul>
+            <% end %>
+
+
+
+        </div>
+
+        <div class="inner-card">
+          <h2>Work Experience</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+        </div>
+
       </div>
 
-      <div class="inner-card">
-        <h2>Latest Projects</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+      <div class="flex-child-right-column">
+        <div class="inner-card">
+          <h2>Location</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
 
-          <% @projects.each do |project| %>
-            <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
-            <ul>
-              <li><%= project.title %></li>
-              <li><%= project.created %></li>
-              <li><%= project.created_by %></li>
-              <li><%= project.stack_used %></li>
-              <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
-               <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
-              <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
-            </ul>
-          <% end %>
+        <div class="inner-card">
+          <h2>Skills</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
 
+        <div class="inner-card">
+          <h2>Education</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
 
-
-      </div>
-
-      <div class="inner-card">
-        <h2>Work Experience</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
-      </div>
+        <div class="inner-card">
+          <h2>Languages</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
 
     </div>
-
-    <div class="flex-child-right-column">
-      <div class="inner-card">
-        <h2>Location</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-
-      <div class="inner-card">
-        <h2>Skills</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-
-      <div class="inner-card">
-        <h2>Education</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-
-      <div class="inner-card">
-        <h2>Languages</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-
   </div>
 </div>
 

@@ -1,15 +1,22 @@
 // Specific CSS for your home-page
 
+// Outermost container for Home //
+.home-container {
+  background-color: rgb(65, 155, 155);
+  min-height: 2000px;
+}
+
+
 // Banner Video
 .banner-top-video {
   border-top: solid 8px rgb(81, 123, 134);
 
-
   video {
     display: block;
     width: 100%;
-    height: auto;
-    top: 120px;
+    object-fit: cover;
+    height: 255px;
+    z-index: -100;
   }
 
   video.scale2{
@@ -31,8 +38,8 @@
   width: 100%;
   height: auto;
   box-shadow: 1px 1px 3px 3px#3b3b3b55;
-  position: relative;
-  top: -1072px;
+  position: absolute;
+  top: 156px;
 
 
   // Email Me Button //
@@ -131,11 +138,11 @@
 
 .master-flex-container {
   position: absolute;
-    top: 298px;
-    min-width: 1200px;
-    // background-color: #2844c2;
-    display: flex;
-    flex-direction: row;
+  top: 384px;
+  min-width: 1200px;
+  // background-color: #2844c2;
+  display: flex;
+  flex-direction: row;
 
   .flex-child-main-column {
     // background-color: aqua;
