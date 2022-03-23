@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
+# active record management
+gem 'activerecord-reset-pk-sequence'
+
 #redis gems
 gem 'redis'
 gem 'redis-namespace'

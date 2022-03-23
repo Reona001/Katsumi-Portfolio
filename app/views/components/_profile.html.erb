@@ -41,7 +41,9 @@
       <div class="flex-child-main-column">
         <div class="inner-card">
           <h2>About Me</h2>
-          <p>Write a brief intro about yourself. It's a good idea to include your personal interests and hobbies as well. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+          <p>I'm a fullstack web developer with experience in front-end!
+          Building things has always been my passion. I endulge myself in woodworking and crafting in my free time
+          I truly enjoy expressing myself through visual art and am excited to show my skills in front-end!</p>
         </div>
 
         <div class="inner-card">
@@ -55,6 +57,7 @@
                 <li><%= project.created %></li>
                 <li><%= project.created_by %></li>
                 <li><%= project.stack_used %></li>
+                <li><%= project.description %></li>
                 <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
                 <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
                 <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
