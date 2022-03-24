@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2022_03_23_103008) do
   end
 
   create_table "blogposts", force: :cascade do |t|
-    t.string "title˜"
+    t.string "title"
     t.text "description"
     t.text "content"
     t.bigint "user_id", null: false
