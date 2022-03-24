@@ -26,6 +26,8 @@ reona = User.create!(
   username: "Reona",
   email: "rkasuya12@gmail.com",
   password: "123456"
+  user.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_coming.png')),
+filename: 'avatar_coming.png')
 )
 
 bob = User.create!(
