@@ -51,17 +51,21 @@
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
 
             <% @projects.each do |project| %>
-              <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
-              <ul>
-                <li><%= project.title %></li>
-                <li><%= project.created %></li>
-                <li><%= project.created_by %></li>
-                <li><%= project.stack_used %></li>
-                <li><%= project.description %></li>
-                <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
-                <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
-                <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
-              </ul>
+              <div class="project-card">
+                <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
+                <div class="project-content">
+                  <ul>
+                    <li><h4><%= project.title %></h4></li>
+                    <li><%= project.created %></li>
+                    <li><%= project.created_by %></li>
+                    <li><%= project.stack_used %></li>
+                    <li><%= project.description %></li>
+                    <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
+                    <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
+                    <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
+                  </ul>
+                </div>
+              </div>
             <% end %>
 
 

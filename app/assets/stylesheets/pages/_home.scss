@@ -222,4 +222,37 @@
       }
     }
   }
+
+
+  /// Project Card Inside Home Profile Page ///
+
+  .project-card {
+    background-color: aquamarine;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .project-image {
+      height: auto;
+      width: 640px;
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .project-content {
+      background-color: white;
+      border-radius: 8px;
+      padding: 8px;
+    }
+  }
+
 }
