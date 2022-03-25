@@ -25,10 +25,12 @@ User.destroy_all
 reona = User.create!(
   username: "Reona",
   email: "rkasuya12@gmail.com",
-  password: "123456"
-  # photo: user.attach.File.open(Rails.root.join('app/assets/images/avatar.jpg')),
-                  # filename: 'avatar_img.jpg')
+  password: "123456",
 )
+
+reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_img.JPG')),
+                  filename: 'avatar_img.JPG')
+
 
 bob = User.create!(
   username: "bob",
