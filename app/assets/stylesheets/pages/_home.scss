@@ -4,17 +4,22 @@
 html,
 body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   background-color: rgb(65, 155, 155);
 }
 
-// .home-container {
-//    background-color: rgb(65, 155, 155);
-//    height: 100%;
-//   margin: 0;
-//   padding: 0;
-// }
+.navbar {
+    position: relative;
+    top: -24px;
+    margin-top: 23px;
+    padding-top: 0px;
+}
+
+.navbar-collapse {
+  height: 77px;
+}
+
 
 // Banner Video
 .banner-top-video {

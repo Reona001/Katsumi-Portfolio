@@ -1,26 +1,19 @@
 // Header
 .logo-image {
-    margin-left: 245px;
-    margin-right: 26px;
-    width: 33px;
-    height: 27px;
-    object-fit: cover;
-    object-position: 2px -1px;
-    // border: 2px solid #000000;
-    transform: scale(5);
+ margin-left: 57px;
+  margin-right: 36px;
+  width: 33px;
+  height: 23px;
+  object-fit: cover;
+  object-position: 2px -1px;
+  transform: scale(5);
 }
 
 .navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2.4rem;
-    padding-bottom: 1.6rem;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
 
 
 // Graphical variables
