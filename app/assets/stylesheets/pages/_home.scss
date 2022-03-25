@@ -227,13 +227,17 @@
   /// Project Card Inside Home Profile Page ///
 
   .project-card {
-    background-color: aquamarine;
+    background-color: rgb(194, 194, 194);
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    h4 {
+      color: rgb(0, 161, 0)
+    }
 
     ul {
       list-style-type: none;
@@ -245,7 +249,8 @@
       height: auto;
       width: 640px;
       padding: 16px;
-      border-radius: 8px;
+      border-radius: 16px;
+      margin: auto;
     }
 
     .project-content {
