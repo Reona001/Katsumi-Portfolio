@@ -10,6 +10,16 @@
     transform: scale(5);
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2.4rem;
+    padding-bottom: 1.6rem;
+}
+
 
 
 

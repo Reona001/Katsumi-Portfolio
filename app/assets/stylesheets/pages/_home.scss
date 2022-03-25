@@ -1,11 +1,20 @@
 // Specific CSS for your home-page
 
 // Outermost container for Home //
-.home-container {
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: rgb(65, 155, 155);
-  min-height: 2000px;
 }
 
+// .home-container {
+//    background-color: rgb(65, 155, 155);
+//    height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
 // Banner Video
 .banner-top-video {
@@ -227,7 +236,13 @@
   /// Project Card Inside Home Profile Page ///
 
   .project-card {
-    background-color: rgb(194, 194, 194);
+   /* From https://css.glass */
+    background: rgba(29, 189, 141, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
