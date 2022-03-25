@@ -39,7 +39,7 @@ bob = User.create!(
 )
 
 
-Project.create!(
+colabo = Project.create!(
   user: reona,
   title: "Colabo",
   created: "January 20th 2022",
@@ -56,8 +56,10 @@ Project.create!(
   url: "https://colabo-social.herokuapp.com/",
   git_repo_url: "https://github.com/RBBE-corp/colabo"
 )
+colabo.photo.attach(io: File.open(Rails.root.join('app/assets/images/colabo.png')),
+                  filename: 'colabo.png')
 
-Project.create!(
+twobyfour = Project.create!(
   user: reona,
   title: "TwoByFour",
   created: "February 15th 2022",
@@ -67,6 +69,8 @@ Project.create!(
   url: "https://twobyfour-app.herokuapp.com/",
   git_repo_url: "https://github.com/RBBE-corp/twobyfour"
 )
+twobyfour.photo.attach(io: File.open(Rails.root.join('app/assets/images/twobyfour.png')),
+                  filename: 'twobyfour.png')
 
 puts "Sample project created!"
 puts "............."
