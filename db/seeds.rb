@@ -65,7 +65,19 @@ twobyfour = Project.create!(
   created: "February 15th 2022",
   created_by: "Team including Byron, Erika, Babin, Reona",
   stack_used: "Ruby on Rails, Javascript, Google Cloud Audio Recognition",
-  description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. At perspiciatis modi cumque dolore maxime, harum doloribus autem nihil ab aut eos, deserunt qui eaque, beatae temporibus sed minima vero repudiandae?",
+  description: "A memorization app that uses music to help users retain phrases.
+  The first iteration of this application was designed for individuals struggling to
+  memorize Japanese. Users can pick phrases they want to learn from a list of
+  prerecorded audio files which contains both the English and Japanese audio.
+  Users can combine these vocalized phrases with an instrumental of their liking to
+  create a composition. The composition then can be played in loop so that the user
+  can listen to the bilingual audio track and memorize the phrases.
+  TwoByFour features a memory test which utilizes Google's Cloud Speech API to
+  verify what the user is saying and provides a score for the user to keep
+  track of their learning progress. Our team goal was to create an app that would make
+  the process of learning more exciting and entertaining for any subject or language.
+  The project gave me a great opportunity to work on backend involving audio files and a
+  beautiful frontend featuring JavaScript libraries such as Sortable JS.",
   url: "https://twobyfour-app.herokuapp.com/",
   git_repo_url: "https://github.com/RBBE-corp/twobyfour"
 )

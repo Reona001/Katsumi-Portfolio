@@ -57,9 +57,9 @@
                   <ul>
                     <li><h4><%= project.title %></h4></li>
                     <li><strong>Started:</strong> <%= project.created %></li>
-                    <li><strong>Members:</strong><%= project.created_by %></li>
-                    <li><strong>Stack:</strong><%= project.stack_used %></li>
-                    <li><%= project.description %></li>
+                    <li><strong>Members:</strong> <%= project.created_by %></li>
+                    <li><strong>Stack:</strong> <%= project.stack_used %></li>
+                    <li><strong>About:</strong> <%= project.description %></li>
                     <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
                     <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
                     <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
