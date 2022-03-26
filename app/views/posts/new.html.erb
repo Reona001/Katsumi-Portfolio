@@ -1,6 +1,9 @@
 <div class="w-150 mx-auto shadow p-5 py-5 my-5 bg-body rounded">
 
 
+  <h1><%= @blogpost.title %></h1>
+  <p>Description: <%= @blogpost.description %></p>
+  <p>ID: <%= @blogpost.id %></p>
   <%# <%= link_to "Add a post", new_post_path(blogpost.id), class: 'btn btn-secondary' %>
 
   <%# <%= render 'components/post-form' %>
@@ -10,7 +13,7 @@
     <%= f.input :content %>
     <%# <%= f.collection_select :blogpost_id, Blogpost.order(:title), :id, :name %>
     <%# <%= f.input :photo, as: :file, class: "btn btn-secondary"%>
-    <%# <div style="display: none;"><%= f.input :blogpost_id, input_html: { value: something } %> </div> %>
+    <div style="display: none;"><%= f.input :blogpost_id, input_html: { value: @blogpost.id } %> </div>
     <%= f.submit class: "btn btn-secondary" %>
   <% end %>
 
