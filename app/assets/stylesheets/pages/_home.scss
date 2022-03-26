@@ -272,7 +272,8 @@ body {
     backdrop-filter: blur(3.6px);
     -webkit-backdrop-filter: blur(3.6px);
 
-    padding: 8px;
+    padding: 24px;
+    padding-top: 16px;
     margin: 8px;
     border-radius: 8px;
     display: flex;
@@ -280,7 +281,12 @@ body {
     flex-direction: column;
 
     h4 {
-      color: rgb(0, 161, 0)
+      color: #686464;
+      background-color: white;
+      height: 39px;
+      padding: 8px;
+      border-radius: 8px;
+      margin-bottom: -4px;
     }
 
     ul {
@@ -300,7 +306,7 @@ body {
     .project-content {
       background-color: white;
       border-radius: 8px;
-      padding: 8px;
+      padding: 24px;
     }
   }
 

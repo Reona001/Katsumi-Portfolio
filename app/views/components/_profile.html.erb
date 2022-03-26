@@ -43,19 +43,19 @@
       <div class="flex-child-main-column">
         <div class="inner-card">
           <h2>About Me</h2>
-          <p>I'm a fullstack web developer with experience in front-end! Creativity has always been at the core of who I am and I love wowing friends and families with my creations and it's exciting to be able to bring that to a wider audience through full stack web development. It would be an understatement to say that webpages can have emotional impact on people. Whether you are trying to appeal to the mass for charity or market your service. A beautiful front-end and a harmonious back-end can make all the difference. I want to use my skills to help businesses and individuals to achieve their goals.</p>
+          <p>I'm a fullstack web developer with focus on front-end development. Creativity has always been at the core of who I am and I love wowing friends and families with my creations and it's exciting to be able to bring that to a wider audience through full stack web development. It would be an understatement to say that webpages can have emotional impact on people. Whether you are trying to appeal to the mass for charity or market your service. A beautiful front-end and a harmonious back-end can make all the difference. I want to use my skills to help businesses and individuals to achieve their goals.</p>
         </div>
 
         <div class="inner-card">
           <h2>Latest Projects</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+          <p>Here are some of my recent projects developed either with a team or on my own.</p>
 
             <% @projects.each do |project| %>
               <div class="project-card">
+              <h4><%= project.title %></h4>
                 <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
                 <div class="project-content">
                   <ul>
-                    <li><h4><%= project.title %></h4></li>
                     <li><strong>Started:</strong> <%= project.created %></li>
                     <li><strong>Members:</strong> <%= project.created_by %></li>
                     <li><strong>Stack:</strong> <%= project.stack_used %></li>

@@ -84,6 +84,20 @@ twobyfour = Project.create!(
 twobyfour.photo.attach(io: File.open(Rails.root.join('app/assets/images/twobyfour.png')),
                   filename: 'twobyfour.png')
 
+portfolio = Project.create!(
+  user: reona,
+  title: "Portfolio",
+  created: "March 1st 2022",
+  created_by: "Reona",
+  stack_used: "Ruby on Rails, Javascript",
+  description: "Portfolio (yes, this very app) is a rails app built to allow users to organize and showcase portfolio projects
+  . Portfolio also has a simple blog and messaging feature allowing users to share dev tips and chat with friends.",
+  url: "https://github.com/Reona001/portfolio",
+  git_repo_url: "https://github.com/Reona001/portfolio"
+)
+portfolio.photo.attach(io: File.open(Rails.root.join('app/assets/images/portfolio_backend.png')),
+                  filename: 'backend.png')
+
 puts "Sample project created!"
 puts "............."
 puts "............."
