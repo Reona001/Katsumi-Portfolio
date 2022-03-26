@@ -3,7 +3,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @posts = Post.all
-    @blogpost = Blogpost.find(params[:format])
+    # @blogpost = Blogpost.find(params[:format])
 
   end
 

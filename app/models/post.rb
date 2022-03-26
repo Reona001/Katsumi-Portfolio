@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
-  validates :sectiontitle, :content, :blogpost_id, presence: true
-  has_many :blogpost, dependent: :destroy
+  validates :sectiontitle, :content, presence: true
+  belongs_to :blogpost
+  # has_many :blogpost, dependent: :destroy
   # attr_accessor :blogpost
 end
