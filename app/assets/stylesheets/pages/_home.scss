@@ -212,15 +212,23 @@ body {
         font-size: 20px;
         .fa-gem {
           color: rgb(202, 0, 0);
+          text-shadow: 0px 1px 0px gray;
         }
         .fa-js {
-          color: rgb(207, 187, 0)
+          color: rgb(207, 187, 0);
+          text-shadow: 0px 1px 0px gray;
         }
         .fa-html5 {
           color: rgb(255, 4, 4);
+          text-shadow: 0px 1px 0px gray;
         }
         .fa-css3-alt {
           color: rgb(0, 110, 255);
+          text-shadow: 0px 1px 0px gray;
+        }
+        .fa-react {
+          color: rgb(8, 215, 251);
+          text-shadow: 0px 1px 0px gray;
         }
 
         bdi {
