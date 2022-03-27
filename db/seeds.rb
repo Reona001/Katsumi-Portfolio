@@ -29,7 +29,7 @@ reona = User.create!(
 )
 
 reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_img.JPG')),
-                  filename: 'avatar_img.JPG')
+                  filename: 'avatar_img.jpeg')
 
 
 bob = User.create!(
