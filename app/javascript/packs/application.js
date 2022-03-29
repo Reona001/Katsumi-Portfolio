@@ -7,8 +7,12 @@
 import 'jquery3'
 import 'popper'
 import 'bootstrap-sprockets'
+import 'bootstrap';
+// import '../stylesheets/application';
 
-
+// = require jquery3
+// = require popper
+// = require bootstrap-sprockets
 
 
 // import initChatroomCable from "../chatroom_channel"

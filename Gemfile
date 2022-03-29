@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 
+# Bootstrap
+gem 'bootstrap', '~> 5.1.3'
+
 # active record management
 gem 'activerecord-reset-pk-sequence'
 
