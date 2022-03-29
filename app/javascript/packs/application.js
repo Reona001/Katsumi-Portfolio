@@ -7,9 +7,8 @@
 import 'jquery3'
 import 'popper'
 import 'bootstrap-sprockets'
-import 'bootstrap';
 // import '../stylesheets/application';
-
+// require("bootstrap")
 // = require jquery3
 // = require popper
 // = require bootstrap-sprockets
