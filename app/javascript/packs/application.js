@@ -4,14 +4,9 @@
 // that code so it'll be compiled.
 
 // Slacker messenger //
-import 'jquery3'
-import 'popper'
-import 'bootstrap-sprockets'
-// import '../stylesheets/application';
-// require("bootstrap")
-// = require jquery3
-// = require popper
-// = require bootstrap-sprockets
+
+
+
 
 
 // import initChatroomCable from "../chatroom_channel"
