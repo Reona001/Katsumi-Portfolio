@@ -28,7 +28,7 @@ reona = User.create!(
   password: "123456",
 )
 
-reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_img.JPG')),
+reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_img.jpeg')),
                   filename: 'avatar_img.jpeg')
 
 
