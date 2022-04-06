@@ -1,0 +1,6 @@
+production:
+  cloud_name: "dvdm3zjhh"
+  api_key: "119232245488563"
+  api_secret: "a8VxDywn8j6DueoARX-mRX_myUA"
+  secure: true
+  cdn_subdomain: true
