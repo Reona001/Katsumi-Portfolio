@@ -245,6 +245,14 @@ body {
           color: rgb(8, 215, 251);
           text-shadow: 0px 1px 0px gray;
         }
+        .fa-globe-americas {
+          color: rgb(0, 132, 221);
+          text-shadow: 0px 1px 0px gray;
+        }
+        .fa-globe-asia {
+          color: rgb(0, 132, 221);
+          text-shadow: 0px 1px 0px gray;
+        }
 
         bdi {
           font-weight: 100;
@@ -261,6 +269,22 @@ body {
     }
   }
 
+
+  .education-card {
+    // background-color: aqua;
+    li {
+      list-style-type: none;
+      margin-left: -24px;
+      margin-bottom: 8px;
+      background-color: rgba(202, 234, 223, 1);
+      border-radius: 8px;
+      padding: 8px;
+      bdi {
+        color: rgb(92, 3, 175);
+        font-weight: bold;
+      }
+    }
+  }
 
   /// Project Card Inside Home Profile Page ///
 
