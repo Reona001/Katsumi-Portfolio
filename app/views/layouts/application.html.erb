@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Reona's Portfolio</title>
+    <title>粕谷克己プロフィール</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -48,20 +48,32 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li> %>
 
+
           <li class="nav-item">
-            <a class="nav-link" href="/">About Me</a>
+          <%# route pending %>
+            <a class="nav-link" href="/home">ホーム</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>
+            <a class="nav-link" href="/">プロフィール</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/blogposts">Blog</a>
+            <a class="nav-link" href="/projects">レポート</a>
           </li>
 
-           <li class="nav-item">
-            <a class="nav-link" href="/rooms">Chatroom</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/blogposts">ブログ</a>
+          </li>
+
+          <li class="nav-item">
+          <%# route pending %>
+            <a class="nav-link" href="/koenkai">後援会</a>
+          </li>
+
+          <li class="nav-item">
+          <%# route pending %>
+            <a class="nav-link" href="/jumusho">事務所案内</a>
           </li>
 
           <% if current_user %>
@@ -77,7 +89,7 @@
             </li>
           <% else %>
             <li class="nav-item">
-              <a class="nav-link" href="/users/sign_in">Login</a>
+              <a class="nav-link" href="/users/sign_in">管理者ログイン</a>
             </li>
           <% end %>
 

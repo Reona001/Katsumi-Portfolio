@@ -1,18 +1,10 @@
 Rails.application.routes.draw do
 
   devise_for :users
-
-  #  // Slacker Message Tutorial //
-  # resources controller: :rooms, action: :index
-  resources :room_messages
-  resources :rooms
-
-
   # delete "logout", to: "sessions#destroy"
   # devise_scope :user do
   #   get "/sign_out" => "sessions#destroy"
   # end
-
   # devise_for :users
   get '/profile', to: "users#profile"
 
@@ -22,9 +14,5 @@ Rails.application.routes.draw do
   resources :experiences, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :blogposts
   resources :posts
-
-  resources :chatrooms, only: [:show, :new, :create, :index] do
-    resources :messages, only: [:create, :destroy]
   end
   # if something has sub-elements nest it using do
-end
