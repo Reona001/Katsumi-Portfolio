@@ -9,8 +9,8 @@
 
 
 puts "Cleaning database"
-Message.destroy_all
-RoomMessage.destroy_all
+# Message.destroy_all
+# RoomMessage.destroy_all
 # Destination.destroy_all
 # Chatroom.destroy_all
 Experience.destroy_all
@@ -28,15 +28,15 @@ reona = User.create!(
   password: "123456",
 )
 
-reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/avatar_img.jpeg')),
-                  filename: 'avatar_img.jpeg')
+reona.photo.attach(io: File.open(Rails.root.join('app/assets/images/katsumi_profile.png')),
+                  filename: 'katsumi_profile')
 
 
-bob = User.create!(
-  username: "bob",
-  email: "bob@gmail.com",
-  password: "123456"
-)
+# bob = User.create!(
+#   username: "bob",
+#   email: "bob@gmail.com",
+#   password: "123456"
+# )
 
 
 colabo = Project.create!(

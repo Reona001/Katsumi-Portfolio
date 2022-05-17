@@ -53,12 +53,6 @@ ActiveRecord::Schema.define(version: 2022_03_23_000023) do
     t.index ["user_id"], name: "index_blogposts_on_user_id"
   end
 
-  create_table "chatrooms", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "destinations", force: :cascade do |t|
     t.string "cordinates"
     t.string "location_name"
@@ -79,16 +73,6 @@ ActiveRecord::Schema.define(version: 2022_03_23_000023) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_experiences_on_user_id"
-  end
-
-  create_table "messages", force: :cascade do |t|
-    t.string "content"
-    t.bigint "user_id", null: false
-    t.bigint "chatroom_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["chatroom_id"], name: "index_messages_on_chatroom_id"
-    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "posts", force: :cascade do |t|
@@ -114,23 +98,6 @@ ActiveRecord::Schema.define(version: 2022_03_23_000023) do
     t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
-  create_table "room_messages", force: :cascade do |t|
-    t.bigint "room_id", null: false
-    t.bigint "user_id", null: false
-    t.text "message"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["room_id"], name: "index_room_messages_on_room_id"
-    t.index ["user_id"], name: "index_room_messages_on_user_id"
-  end
-
-  create_table "rooms", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["name"], name: "index_rooms_on_name", unique: true
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
     t.string "image"
@@ -150,10 +117,6 @@ ActiveRecord::Schema.define(version: 2022_03_23_000023) do
   add_foreign_key "blogposts", "users"
   add_foreign_key "destinations", "users"
   add_foreign_key "experiences", "users"
-  add_foreign_key "messages", "chatrooms"
-  add_foreign_key "messages", "users"
   add_foreign_key "posts", "blogposts"
   add_foreign_key "projects", "users"
-  add_foreign_key "room_messages", "rooms"
-  add_foreign_key "room_messages", "users"
 end
