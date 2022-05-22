@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   resources :experiences, only: [:index, :new, :create, :show, :edit, :update, :destroy]
   resources :blogposts
   resources :posts
+  resources :test
   end
   # if something has sub-elements nest it using do
