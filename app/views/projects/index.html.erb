@@ -1,25 +1,107 @@
-<h1>Projects#index</h1>
-<%# <p><%= link_to "Add a new project", new_project_path, class: 'btn btn-secondary' %></p>
+<%# PROFILE BANNER %>
 
-<% @projects.each do |project| %>
-<img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('comingsoon.png') %>">
-<ul>
-  <li><%= project.title %></li>
-  <li><%= project.created %></li>
-  <li><%= project.created_by %></li>
-  <li><%= project.stack_used %></li>
-  <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
-  <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
-  <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary' %></li>
-</ul>
-<% end %>
+<%# Video %>
+<div class="banner-top-video">
+  <video autoplay loop muted id="myVideo">
+    <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
+  </video>
+</div>
 
-<iframe src="https://drive.google.com/file/d/1oHmt4PYwtPCC9jznD_2gU0rz-cDm0PS2/preview" width="640" height="480" allow="autoplay"></iframe>
+<%# Inner Banner Content %>
+<div class="profile-banner2">
+  <div class="profile-box2">
+    <div class="profile-image-container">
+    <%# Sometimes the cl_image_path will not work%>
+      <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
+        <div class="name-title">
+            <%# <h2>川島町議会議員</h2> %>
+            <h1>議会活動報告</h1>
+        </div>
+          <%# Contact Me Button %>
+          <div class="contact-me">
+            <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+            <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
 
-<%# <iframe src="gikaihoukoku-vol3.pdf" width="800px" height="2100px"> </iframe> %>
+<%# PDF Document iframe %>
+<div class="pdf-document" style="display:block; position:absolute; margin-left:1080px; margin-top: 280px;">
+  <iframe src="https://drive.google.com/file/d/1oHmt4PYwtPCC9jznD_2gU0rz-cDm0PS2/preview" width="300" height="200" allow="autoplay"></iframe>
+</div>
 
-<ul>
-<li>tomato</li>
-<li>tomato2</li>
-<li>bob</li>
-</ul>
+<%# Main Container %>
+<div class="content-container">
+    <div class="master-flex-container">
+
+      <div class="flex-child-main-column">
+        <div class="inner-card">
+          <h2 class="vol-title">議会活動報告 Vol.3 発行:令和4年3月</h2>
+          <p> 令和4年3月21日をもって埼玉県に対するまん延防止等重点措置は解除されましたが、長引くコロ ナ禍で地域のコミュニティ活動も停滞し、地域経済も深刻な影響を受けております。  令和4年度は新しい生活様式を踏まえた地域経済の活性化対応はもとより、感染拡大の影響を受け た農家や中小企業、商工業事業者の皆様への支援がさらに必要なものと考えています。  令和4年度町当初予算にも国の地方創生臨時交付金を活用したコロナ対策事業が計上されていま すので、ポストコロナに向けた町民の皆様への支援策や社会経済活動の再開に向けた施策提言を引 き続き行って参ります。  コロナ禍の中での議員活動となりましたが、令和3年度の活動状況を取りまとめましたのでご覧い ただければ幸いです。なお、現在3回目のワクチンの接種事業が進められていますが、ご協力をいた だいております医療従事者の皆様に改めて感謝を申し上げます。</p>
+        </div>
+
+        <div class="inner-card">
+          <p>　　3月定例議会には令和4年度当初予算案や条例改正等の議案が上程され、3月16日審議の結果、全議案とも可決承認されました。  一般会計の予算総額は75億1,300万円(前年比8.3%増)で、第6次総合振興計画戦略目標にそった予 算が計上され、新型コロナ対策費用としては、ワクチン接種事業費6,074万円や学童保育トイレ改修費 498万円等が計上されました。  条例改正では、川島町廃校施設の開放及び施設の管理に関する条例が改正され、旧小学校の利活用を検証するための期間がさらに2か年延長されました。また、川島町水防団条例も改正され、水害警 戒出動の費用弁償が千円引き上げられ4,000円とになります。</p>
+          <div class="sub-yosan">
+            <table>
+                <tr>
+                  <th>【災害関連予算では】</th>
+                  <th>【教育関連予算では】</th>
+                </tr>
+                <tr>
+                  <td>◎高台避難場所整備事業 8,580万円 <br>(設計及び調査費として)</td>
+                  <td>◎学校統合推進事業 397万円 <br>(小中一貫教育推進事業の一環として)</td>
+                </tr>
+                <tr>
+                  <td>◎防災備品整備事業 671万円 <br>(避難所備蓄品等)</td>
+                  <td>◎かわじま郷土資料館(仮称)開設準備事業 178万円 <br>(文化財の保存・活用、歴史文化を学ぶ場として)</td>
+                </tr>
+              </table>
+          </div>
+
+            <div class="project-card">
+              <h4> タイトル　</h4>
+                <img class="project-image">
+                <div class="project-content">
+                  <ul>
+                    <li>テキスト</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <h4> タイトル　</h4>
+                <img class="project-image">
+                <div class="project-content">
+                  <ul>
+                    <li>テキスト</li>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <h4> タイトル　</h4>
+                <img class="project-image">
+                <div class="project-content">
+                  <ul>
+                    <li>テキスト</li>
+                  </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="inner-card">
+          <h2>Work Experience</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>

@@ -72,6 +72,7 @@
 @import "components/show";
 @import "rooms";
 @import "room_messages.scss";
+@import "components/report";
 
 // Chatroom CSS partials
 // @import "chatrooms.scss";
@@ -88,5 +89,6 @@
 
 // Home //
 @import "home.scss"
+
 
 //Don't place semicollon on the last import
