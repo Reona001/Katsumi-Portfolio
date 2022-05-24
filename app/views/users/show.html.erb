@@ -1,0 +1,24 @@
+<h1><%= @user.username %></h1>
+<%# replace colabo png with default avatar photo %>
+<img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>">
+
+<p><%= @user.image %></p>
+
+<% if current_user %>
+<ul style="list-style-type:none;">
+<li class="m-1"><%= link_to "Edit profile", edit_user_path, class: 'btn btn-secondary' %></li>
+<li class="m-1"><%= link_to "Add a project to your portfolio", new_project_path, class: 'btn btn-secondary' %></li>
+<li class="m-1"><%= link_to "Add a job experience", new_experience_path, class: 'btn btn-secondary' %></li>
+<li class="m-1"><%= link_to "View experiences", experiences_path, class:'btn btn-secondary' %></li>
+<li class="m-1"><%= link_to "Back to top", root_path, class: 'btn btn-secondary' %></li>
+</ul>
+<% end %>
+
+
+<div class="experiences-container">
+  <p>Render job experiencs in a card carousel</p>
+</div>
+
+<div class="projects-container">
+  <p>Render projects in a card carousel</p>
+</div>

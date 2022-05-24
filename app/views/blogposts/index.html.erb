@@ -1,0 +1,29 @@
+<h1>Blog Post Page</h1>
+<p>Pseudo</p>
+<ul>
+  <li>We want to show all the blogposts with its content models</li>
+  <li>Should incorporate beautiful images and javascript</li>
+
+
+    <% @blogposts.each do |blogpost| %>
+  <div class="blogpost-card">
+        <h1><%= blogpost.title %></h1>
+        <p><%= blogpost.description %></p>
+        <p><%= blogpost.id %></p>
+        <%= link_to "check it out", blogpost_path(blogpost), class: 'btn btn-secondary' %>
+  </div>
+    <% end %>
+    <%= link_to "Add a post", new_blogpost_path, class: 'btn btn-secondary' %>
+
+</ul>
+
+
+<%
+=begin %>
+              <% blogpost.posts.each do |post| %>
+                <h4><%= post.sectiontitle %></h4>
+                <p><%= post.content %></p>
+                <p><%= post.blogpost_id %></p>
+              <% end %>
+              <%
+=end %>

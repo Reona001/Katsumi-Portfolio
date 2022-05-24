@@ -1,0 +1,7 @@
+
+<% @chatrooms.each do |chatroom| %>
+
+<h1><%= chatroom.name %></h1>
+<%= link_to "Enter chatroom", chatroom_path(chatroom), class: 'btn btn-secondary' %>
+
+<% end %>

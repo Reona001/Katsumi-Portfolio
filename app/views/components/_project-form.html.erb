@@ -1,0 +1,10 @@
+  <%= simple_form_for(@project) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :created %>
+    <%= f.input :created_by %>
+    <%= f.input :stack_used %>
+    <%= f.input :url %>
+    <%= f.input :git_repo_url %>
+    <%= f.input :photo, as: :file, class: "btn btn-secondary"%>
+    <%= f.submit class: "btn btn-secondary" %>
+  <% end %>

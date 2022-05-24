@@ -1,0 +1,6 @@
+  <%= simple_form_for(@user) do |f| %>
+    <%= f.input :username %>
+    <%= f.input :image, label: "Favorite quote" %>
+    <%= f.input :photo, as: :file, class: "btn btn-secondary"%>
+    <%= f.submit 'Update profile', class: "btn btn-secondary" %>
+  <% end %>

@@ -1,0 +1,5 @@
+<%= form_for (:session) do |f| %>
+  <%= f.label :name, 'Enter chatroom name' %>
+  <%= f.text_field :name, autocomplete: 'off' %>
+  <%= f.submit 'Create a new chatroom' %>
+<% end %>

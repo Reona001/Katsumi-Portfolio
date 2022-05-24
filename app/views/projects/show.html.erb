@@ -1,0 +1,14 @@
+<h1><%= @project.title %></h1>
+<img class="project-image" src="<%= @project.photo.attached? ? cl_image_path(@project.photo.key) : image_path('colabo.png') %>">
+<ul>
+  <li><%= @project.created %></li>
+  <li><%= @project.created_by %></li>
+  <li><%= @project.stack_used %></li>
+  <li><a style="text-decoration:none" href="<%= @project.url %>">Visit the project</a></li>
+  <li><%= @project.git_repo_url %></li>
+</ul>
+
+ <%= link_to "Edit", edit_project_path(@project), class: "btn btn-secondary" %>
+ <%= link_to "Remove this project", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to remove this?"}, class: 'btn btn-secondary' %>
+ <%= link_to "Back to projects", projects_path, class: 'btn btn-secondary' %>
+ <%= link_to "Back to profile", user_path(current_user.id), class: 'btn btn-secondary' %>

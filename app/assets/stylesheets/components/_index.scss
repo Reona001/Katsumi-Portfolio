@@ -1,0 +1,17 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+
+
+.project-image {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
