@@ -18,9 +18,15 @@
 
         <%# <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>
         <%# <%= @user.image %>
+
+        <%# Age calculator %>
+        <% current_year = Time.new.year  %>
+        <% age = current_year - 1957  %>
+
           <div class="name-title">
             <h2>川島町議会議員</h2>
-            <h1>粕谷 克己</h1>
+            <h3>粕谷 克己（かつみ）</h3>
+            <h4>1957年3月川島町上大屋敷生れ (現在<%=age%>歳)</h4>
             <%# Use fontawesome ver. 5.15.4 %>
             <%# <div class="icon-container">
               <a href="https://www.linkedin.com/in/reonakasuya94/"><i class="fab fa-linkedin-in"></i></a>
@@ -46,52 +52,32 @@
 
       <div class="flex-child-main-column">
         <div class="inner-card">
-          <h2 class="vol-title">議会活動報告 Vol.3 発行:令和4年3月</h2>
-          <p> 令和4年3月21日をもって埼玉県に対するまん延防止等重点措置は解除されましたが、長引くコロ ナ禍で地域のコミュニティ活動も停滞し、地域経済も深刻な影響を受けております。  令和4年度は新しい生活様式を踏まえた地域経済の活性化対応はもとより、感染拡大の影響を受け た農家や中小企業、商工業事業者の皆様への支援がさらに必要なものと考えています。  令和4年度町当初予算にも国の地方創生臨時交付金を活用したコロナ対策事業が計上されていま すので、ポストコロナに向けた町民の皆様への支援策や社会経済活動の再開に向けた施策提言を引 き続き行って参ります。  コロナ禍の中での議員活動となりましたが、令和3年度の活動状況を取りまとめましたのでご覧い ただければ幸いです。なお、現在3回目のワクチンの接種事業が進められていますが、ご協力をいた だいております医療従事者の皆様に改めて感謝を申し上げます。</p>
+          <h2 class="vol-title">【主な活動目標】</h2>
+          <h5> 変革を貫く実行力で 住みやすい地域づくり を目指します。</h5>
+          <ul>
+            <li>廃校を有効利活用した地域の活性化</li>
+            <li>災害(水害)に備えたインフラの整備と安全安心の 町づくり</li>
+            <li>農業振興と調和のとれた地域開発</li>
+            <li>国際社会で活躍できる子供たちの教育を支援</li>
+          </ul>
         </div>
 
         <div class="inner-card">
-          <p>　　3月定例議会には令和4年度当初予算案や条例改正等の議案が上程され、3月16日審議の結果、全議案とも可決承認されました。  一般会計の予算総額は75億1,300万円(前年比8.3%増)で、第6次総合振興計画戦略目標にそった予 算が計上され、新型コロナ対策費用としては、ワクチン接種事業費6,074万円や学童保育トイレ改修費 498万円等が計上されました。  条例改正では、川島町廃校施設の開放及び施設の管理に関する条例が改正され、旧小学校の利活用を検証するための期間がさらに2か年延長されました。また、川島町水防団条例も改正され、水害警 戒出動の費用弁償が千円引き上げられ4,000円とになります。</p>
-          <div class="sub-yosan">
-            <table>
-                <tr>
-                  <th>【災害関連予算では】</th>
-                  <th>【教育関連予算では】</th>
-                </tr>
-                <tr>
-                  <td>◎高台避難場所整備事業 8,580万円 <br>(設計及び調査費として)</td>
-                  <td>◎学校統合推進事業 397万円 <br>(小中一貫教育推進事業の一環として)</td>
-                </tr>
-                <tr>
-                  <td>◎防災備品整備事業 671万円 <br>(避難所備蓄品等)</td>
-                  <td>◎かわじま郷土資料館(仮称)開設準備事業 178万円 <br>(文化財の保存・活用、歴史文化を学ぶ場として)</td>
-                </tr>
-              </table>
-          </div>
-            <% @projects.each do |project| %>
-              <div class="project-card">
-              <h4><%= project.title %></h4>
-                <img class="project-image" src="<%= project.photo.attached? ? cl_image_path(project.photo.key) : image_path('colabo.png') %>">
-                <div class="project-content">
-                  <ul>
-                    <li><strong>Started:</strong> <%= project.created %></li>
-                    <li><strong>Members:</strong> <%= project.created_by %></li>
-                    <li><strong>Stack:</strong> <%= project.stack_used %></li>
-                    <li><strong>About:</strong> <%= project.description %></li>
-                    <li><a style="text-decoration:none" href="<%= project.url %>">Visit the project</a></li>
-                    <li><a style="text-decoration:none" href="<%= project.git_repo_url %>">Visit the Git Repo</a></li>
-                    <%# <li><%= link_to "Details", project_path(project), class: 'btn btn-secondary'%></li>
-                  </ul>
-                </div>
-              </div>
-            <% end %>
-
-
-
+          <p>経歴</p>
+              <ul>
+                <li>明治学院大学法学部卒</li>
+                <li>1979年4月川島町役場入庁</li>
+                <li>川島町会計管理者</li>
+                <li>総務課長（自主防災会の組織化）理事、主席専門員</li>
+                <li>（その他）</li>
+                <li>出丸地区横塚川改修促進協議会役員</li>
+                <li>埼玉県立松山高校同窓会川島部会役員</li>
+              </ul>
         </div>
 
+
         <div class="inner-card">
-          <h2>Work Experience</h2>
+          <h2>テキスト</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
         </div>
 
