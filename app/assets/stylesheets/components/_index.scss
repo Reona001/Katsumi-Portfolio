@@ -43,15 +43,38 @@ img {
 
 
 .content-image {
-  width: 600px;
-  height: auto;
-  background-color: blue;
+  max-width: 300px;
+  max-height: 200px;
+  // background-color: blue;
 }
 
-.sub-section-title {
+.title-holder {
   margin-top: 16px;
-  color: darkblue;
-  font-size: 18px;
+  .sub-section-title {
+      color: darkblue;
+      font-size: 18px;
+      display: inline;
+    }
+
+}
+
+
+
+.li-display-horizontal {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+.image-description {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    list-style: none;
+    text-align: center;
+  }
 }
 
 .inner-card {
