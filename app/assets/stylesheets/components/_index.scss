@@ -4,6 +4,7 @@
 @import "navbar";
 
 
+
 .project-image {
   height: 300px;
   width: 400px;
@@ -51,4 +52,55 @@ img {
   margin-top: 16px;
   color: darkblue;
   font-size: 18px;
+}
+
+.inner-card {
+  p {
+    padding: 16px;
+  }
+}
+
+.vol-title {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.flex-child-main-column2 {
+  // background-color: aqua;
+  width: 1200px;
+  height: auto;
+
+  p {
+    line-height: 28px;
+    font-size: 16px;
+  }
+
+  .inner-card {
+    border-radius: 3px;
+    margin: 16px;
+    margin-right: 0px;
+    background-color: whitesmoke;
+    padding: 16px;
+    box-shadow: 1px 1px 3px 3px#3b3b3b55;
+  }
+}
+
+.sub-yosan {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+  table {
+    background-color: white;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: -24px;
+  }
+  th {
+    text-align: center;
+  }
+  td,tr,th {
+    border: solid 2px gray;
+  }
 }
