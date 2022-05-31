@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :koenkai]
+  skip_before_action :authenticate_user!, only: [:home, :koenkai, :shoko]
 
   def home
     # Using id: 3 could cause errors when db:drops
@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   end
 
   def koenkai
+  end
+
+  def shoko
   end
 
   # Documentation on find_by and where
