@@ -43,20 +43,18 @@ img {
 
 
 .content-image {
-  max-width: 300px;
+  // max-width: 300px;
   max-height: 200px;
+  padding: 8px;
   // background-color: blue;
 }
 
-.title-holder {
-  margin-top: 16px;
+
   .sub-section-title {
       color: darkblue;
       font-size: 18px;
       display: inline;
     }
-
-}
 
 
 
@@ -66,6 +64,13 @@ img {
   flex-direction: row;
 }
 
+.classifier-box {
+  // background-color: aquamarine;
+  width: auto;
+  display: flex;
+  justify-content: space-evenly;
+  // flex-direction: row;
+}
 
 .image-description {
   display: flex;
@@ -75,6 +80,22 @@ img {
     list-style: none;
     text-align: center;
   }
+}
+
+
+.test-title {
+  // background-color: blue;
+  width: auto;
+  text-align: center;
+}
+
+
+.master-image-box {
+  background-color: azure;
+  width: auto;
+  padding: 16px;
+  margin: 24px;
+  border-radius: 8px;
 }
 
 .inner-card {
@@ -96,6 +117,15 @@ img {
   p {
     line-height: 28px;
     font-size: 16px;
+  }
+
+  bdi {
+    color: rgb(3, 161, 3);
+    font-weight: bold;
+  }
+
+  bdi:hover {
+    color: rgb(132, 216, 5);
   }
 
   .inner-card {
