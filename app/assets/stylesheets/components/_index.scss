@@ -3,7 +3,17 @@
 @import "avatar";
 @import "navbar";
 
-
+.profile-image-container2 {
+  .user-profile-image {
+    position: absolute;
+    left: 24%;
+  }
+  .name-title {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+  }
+}
 
 .project-image {
   height: 300px;
