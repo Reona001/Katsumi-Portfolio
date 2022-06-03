@@ -66,7 +66,7 @@
           </div>
 
             <div class="project-card">
-                  <h4> 国や県の水害対策事業も行われています</h4>
+                  <h4 style="text-align: center;"> 国や県の水害対策事業も行われています</h4>
 
               <div class="li-display-horizontal">
                 <div class="master-image-box">
@@ -111,13 +111,14 @@
 
                 <img class="project-image">
                 <div class="project-content">
-                  <h5 class="report-section-title">令和 3 年 6 月定例議会では</h5>
+                  <h5 class="report-section-title" style="margin-top: -8px;">令和 3 年 6 月定例議会では</h5>
+
                   <p>水道法の改正により水道施設台帳の整備が義務化されたことから、
                   水道事業の経営状況等を質しました。また、子供たちが安全で安心して学校教育に臨めるよう
                   「災害時の学校給食実施体制」や「通学路 の安全確保」についての質疑を行いました。</p>
 
-                  <h6>水道施設台帳の整備について</h6>
-
+                  <%# Section Start %>
+                    <h6>水道施設台帳の整備について</h6>
                     <table>
                       <tr><td></td></tr>
                       <tr>
@@ -144,62 +145,149 @@
                         <td><%= render 'components/answer' %></td>
                         <td>今年度中に施設台帳を整備します。更新が必要な老朽管は約13キロ残っており、総延長の8%に当たります。</td>
                       </tr>
-                       <tr>
+                    </table>
+                    <%# Section End %>
+
+                    <%# Section Start %>
+                    <h6>災害時における学校給食実施体制について</h6>
+                    <table>
+                      <tr><td></td></tr>
+                      <tr>
                         <td><%= render 'components/question' %></td>
-                        <td></td>
+                        <td>災害などの不測事態に備え、学校給食施設の防災対策や学校給食再開までのバックアップ体制構築が必要と考えるが。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>代替給食となる非常食の備蓄や近隣市町村との連携、民間企業への給食提供の協力要請等の対応をしてまいります。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>給食費特別会計が一般会計に組入れ られたこともあり、災害を受けた他市町の事例を参考に、代替給食となる食材を非常食として購入できないか。</td>
                       </tr>
                        <tr>
                         <td><%= render 'components/answer' %></td>
-                        <td></td>
+                        <td>給食再開までの非常食ということで あれば備えられないことはないと考えます。</td>
+                      </tr>
+                       <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>老朽管の破損事故も多く、改正水道法では水道施設台帳の整備が義務付けられたが町の対応は。また、耐用年数を超えた老朽管の現状は。</td>
+                      </tr>
+                       <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>今年度中に施設台帳を整備します。更新が必要な老朽管は約13キロ残っており、総延長の8%に当たります。</td>
                       </tr>
                     </table>
-                  <ul>
-                    <li class="question"><%= render 'components/question' %>水道事業の経営状況は。</li>
-                    <li class="answer"><%= render 'components/answer' %>県水の供給割合を9割から6割に下げ(井水が4割に)経営の合理化に努めています。</li>
-                    <li class="question"><%= render 'components/question' %>監査意見書にも水道施設のダウンサイジング(規模縮少)が必要とあるが。</li>
-                    <li class="answer"><%= render 'components/answer' %>給水人口の減少もあり、料金改定も視野に、施設のダウンサイジング(規模縮少)に取り組みます。</li>
-                    <li class="question"><%= render 'components/question' %>老朽管の破損事故も多く、改正水道法では水道施設台帳の整備が義務付けられたが町の対応は。また、耐用年数を超えた老朽管の現状は。 </li>
-                    <li class="answer"><%= render 'components/answer' %>今年度中に施設台帳を整備します。更新が必要な老朽管は約13キロ残っており、総延長の8%に当たります。</li>
-                  </ul>
+                    <%# Section End %>
 
-                  <h6>災害時における学校給食実施体制について</h6>
-                  <ul>
-                    <li class="question"><%= render 'components/question' %>災害などの不測事態に備え、学校給食施設の防災対策や学校給食再開までのバックアップ体制構築が必要と考えるが。</li>
-                    <li class="answer"><%= render 'components/answer' %>代替給食となる非常食の備蓄や近隣市町村との連携、民間企業への給食提供の協力要請等の対応を してまいります。</li>
-                    <li class="question"><%= render 'components/question' %>給食費特別会計が一般会計に組入れ られたこともあり、災害を受けた他 市町の事例を参考に、代替給食となる食材を非常食として購入できないか。</li>
-                    <li class="answer"><%= render 'components/answer' %>給食再開までの非常食ということで あれば備えられないことはないと考 えます。</li>
-                  </ul>
+
+
+
 
                   <h5 class="report-section-title">令和 3 年 9 月定例議会では</h5>
                   <p>千葉県八街市で下校中の小学生の列にトラックが衝突し、5人が死傷する大変痛ましい事故が6月に発生したことから通学路の安全対策について質しました。
                   また、「水害時の避難に関する実態調査」や「郷 土資料館の整備方針」等について質疑を行いました。</p>
-                  <h6> 通学児童の交通安全対策について</h6>
-                  <ul>
-                    <li class="answer"><%= render 'components/answer' %>小中学校から報告のあった危険個所(61) を確認し状況改善を目指します。</li>
-                    <li class="question"><%= render 'components/question' %>補正予算案に交通安全対策費(532万)が計 上されているが、継続的に事業を推進す るためには当初予算でも箇所付けが必要 と考えるが。 </li>
-                    <li class="answer"><%= render 'components/answer' %>当面できるものは早急にと補正対応しま したが事業によっては継続も視野に対応 してまいります。</li>
-                    <li class="question"><%= render 'components/question' %>千葉県では児童の死傷事故も発生してお り、遠距離通学児童の安全を考え全小学 校でスクールバスの運行ができないか。</li>
-                    <li class="answer"><%= render 'components/answer' %>通学距離では長楽、角泉、釘無、山ケ谷戸地区が遠距離と考えられますので、今後小中一貫教育の中 で検討してまいります。</li>
-                  </ul>
 
-                  <h6>水害ハザードマップの活用と水害対策について</h6>
-                  <ul>
-                    <li class="question"><%= render 'components/question' %>水害ハザードマップを活用した防災教育が実施できないか。 </li>
-                    <li class="answer"><%= render 'components/answer' %>小中学校の防災教育では地震災害の避難訓練を行っていましたが、今年度は水害を学ぶためマイ・タイムラインの作成に取り組んでまいります。</li>
-                  </ul>
 
-                  <h6> 郷土資料館の整備について</h6>
-                  <ul>
-                    <li class="question"><%= render 'components/question' %>郷土資料館の整備方針と設置場所は。</li>
-                    <li class="answer"><%= render 'components/answer' %>既存施設(旧小学校)を利用した整備を考えており、町の歴史・郷土芸能・自然地理の資料展示の他に体験ができる学びの施設となるように考えています。 </li>
-                  </ul>
+                    <%# Section Start %>
+                    <h6>通学児童の交通安全対策について</h6>
 
-                  <ul>
-                    <li class="question"></li>
-                    <li class="answer"></li>
-                    <li class="question"></li>
+                    <table>
+                      <tr><td></td></tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>小中学校から報告のあった危険個所(61) を確認し状況改善を目指します。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>補正予算案に交通安全対策費(532万)が計上されているが、継続的に事業を推進するためには当初予算でも箇所付けが必要と考えるが。</td>
+                      </tr>
+                       <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>当面できるものは早急にと補正対応しましたが事業によっては継続も視野に対応してまいります。</td>
+                      </tr>
+                       <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>千葉県では児童の死傷事故も発生しており、遠距離通学児童の安全を考え全小学校でスクールバスの運行ができないか。</td>
+                      </tr>
+                       <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>通学距離では長楽、角泉、釘無、山ケ谷戸地区が遠距離と考えられますので、今後小中一貫教育の中で検討してまいります。</td>
+                      </tr>
+                    </table>
+                    <%# Section End %>
 
-                  </ul>
+
+                    <%# Section Start %>
+                    <h6>水害ハザードマップの活用と水害対策について</h6>
+                    <table>
+                      <tr><td></td></tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>水害ハザードマップを活用した防災教育が実施できないか。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>小中学校の防災教育では地震災害の避難訓練を行っていましたが、今年度は水害を学ぶためマイ・タイムラインの作成に取り組んでまいります。</td>
+                      </tr>
+                    </table>
+                    <%# Section End %>
+
+                    <%# Section Start %>
+                     <h6>郷土資料館の整備について</h6>
+                    <table>
+                      <tr><td></td></tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>郷土資料館の整備方針と設置場所は。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>既存施設(旧小学校)を利用した整備を考えており、町の歴史・郷土芸能・自然地理の資料展示の他に体験ができる学びの施設となるように考えています。</td>
+                      </tr>
+                    </table>
+                    <%# Section End %>
+
+
+                  <h5 class="report-section-title">令和 3 年 12 月定例議会では</h5>
+                    <p>長引くコロナ禍の影響で米価の低落が農業経営に深刻な影響を与えていることから町の農業支援策等を質しました。</p>
+
+
+                    <%# Section Start %>
+                    <h6>米生産農家への支援について</h6>
+
+                    <table>
+                      <tr><td></td></tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>米価低落への支援策は。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>お蔵米生産者へ支援事業(対策費550万円)を行います。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>コロナ禍で20年産米の余剰が米価下落の要因で大規模農家ほど影響が大きいと言われるが、反当の減収額は。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>昨年度と比較し反当31,200円(コシヒカリ八俵収穫で国の対策がないと仮定)ほどの減収となります。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/question' %></td>
+                        <td>減収の影響から次期作付が懸念され、久喜市等では次期作付種苗等の支援(コロナ対策交付金で反当り3,500円助成)
+                        を行っているが町も作付を行う全農家に対して次期作付種苗等の支援ができないか。</td>
+                      </tr>
+                      <tr>
+                        <td><%= render 'components/answer' %></td>
+                        <td>減反政策が廃止され、個々の経営判断で米作りが行われており、町としては農家の経営基盤安定を考え農地の集積・集約化、圃場の区画拡大均平化事業への支援を行います。</td>
+                      </tr>
+
+                    </table>
+                    <%# Section End %>
+
+
+
                 </div>
             </div>
 
@@ -215,10 +303,10 @@
 
         </div>
 
-        <div class="inner-card">
+        <%# <div class="inner-card">
           <h2>Work Experience</h2>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam quasi rem illum optio! Ducimus, sequi harum! Sunt itaque repellat odit tenetur rem quae aspernatur officia non eaque! Obcaecati, quibusdam provident!</p>
-        </div>
+        </div> %>
 
       </div>
 
