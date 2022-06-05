@@ -1,8 +1,40 @@
-<h1>Hello this is koenkai.html.erb<h1>
+<%# Video %>
+<div class="banner-top-video">
+  <video autoplay loop muted id="myVideo">
+    <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
+  </video>
+</div>
 
-<object data="your_url_to_pdf" type="application/pdf">
- <iframe src="https://drive.google.com/file/d/1losaKpxJ05MyTRFJTg-n2jERNt4vfjBh/preview" width="640" height="480" allow="autoplay"></iframe>
-</object>
+<%# Inner Banner Content %>
+<div class="profile-banner2">
+  <div class="profile-box2">
+    <div class="profile-image-container2">
+    <%# Sometimes the cl_image_path will not work%>
+      <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
+        <div class="name-title">
+            <%# <h2>川島町議会議員</h2> %>
+            <h1>後援会情報</h1>
+        </div>
+          <%# Contact Me Button %>
+          <div class="contact-me">
+            <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+            <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
 
 
-<a href="https://drive.google.com/file/d/1losaKpxJ05MyTRFJTg-n2jERNt4vfjBh/preview" download="newfilename">Download the pdf</a>
+<div class="content-container">
+    <div class="master-flex-container">
+      <div class="flex-child-main-column2">
+        <div class="inner-card">
+          <object data="your_url_to_pdf" type="application/pdf">
+            <iframe style="align-content: center;" src="https://drive.google.com/file/d/1losaKpxJ05MyTRFJTg-n2jERNt4vfjBh/preview" width="640" height="480" allow="autoplay"></iframe>
+          </object>
+        </div>
+      </div>
+    </div>
+</div>
