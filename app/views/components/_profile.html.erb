@@ -1,5 +1,5 @@
 
-<div class="home-container">
+
   <div class="banner-top-video">
     <video autoplay loop muted id="myVideo">
       <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
@@ -10,40 +10,26 @@
 
   <%# PROFILE BANNER %>
   <div class="profile-banner">
-    <div class="profile-box">
       <div class="profile-image-container">
-      <%# Sometimes the cl_image_path will not work%>
-      <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
-
-
-        <%# <img class="user-profile-image" src="<%= @user.photo.attached? ? cl_image_path(@user.photo.key) : image_path('colabo.png') %>
-        <%# <%= @user.image %>
+        <%# Sometimes the cl_image_path will not work%>
+        <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
 
         <%# Age calculator %>
-        <% current_year = Time.new.year  %>
-        <% age = current_year - 1957  %>
-
+          <% current_year = Time.new.year  %>
+          <% age = current_year - 1957  %>
           <div class="name-title">
             <h2>川島町議会議員</h2>
             <h3>粕谷 克己（かつみ）</h3>
             <h5>1957年3月川島町上大屋敷生れ (現在<%=age%>歳)</h5>
-            <%# Use fontawesome ver. 5.15.4 %>
-            <%# <div class="icon-container">
-              <a href="https://www.linkedin.com/in/reonakasuya94/"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/Reona001"><i class="fab fa-github-alt"></i></a>
-              <a href="https://www.instagram.com/iter_vitae_reo/?hl=en"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.facebook.com/kasuya.reona/"><i class="fab fa-facebook"></i></a>
-            </div> %>
-    </div>
 
-          <%# Contact Me Button %>
-          <div class="contact-me">
-            <a class="button" href="mailto:kasuyakatsumi@gmail.com">
-            <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
-            </a>
-          </div>
-        </div>
-    </div>
+            <%# Contact Me Button %>
+            <div class="contact-me">
+              <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+              <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+              </a>
+            </div>
+      </div>
+  </div>
   </div>
 
   <%# END %>
@@ -91,13 +77,7 @@
             <li>町が地方創生推進交付金を活用し地域商社の設立を 目指していることから、地域振興の役割を担う地域商 社がどのような組織として設置・運営されるのか先進 自治体の取組事例も含め調査研究を行いました。  視察地の茨城県桜川市では、市と商工会が出資(資 本金1,200万円)した株式会社クラセル桜川の経営状況 等の説明を受けました。クラセル桜川は地域の特産品 を販売する店舗を持ち、市と連携し観光資源の開発に も力を入れていました。</li>
           </ul>
         </div>
-
-
-
-      </div>
-
-      <%# Location Box %>
-      <div class="flex-child-right-column">
+           <%# Location Box %>
         <div class="inner-card">
           <h3>後援会所在</h3>
           <div class="location">
@@ -105,103 +85,24 @@
             <h3>連絡先</h3>
             <i class="fas fa-envelope"><bdi><a href="mailto:kasuyakatsumi@gmail.com">kasuyakatsumi@gmail.com</a></bdi></i>
             <i>FAX 049(297)7655</i>
+            <p>地域発展のために、是非、粕谷かつみの後援会に入り、一緒に活動しませんか</p>
           </div>
-          <p>地域発展のために、是非、粕谷かつみの後援会に入り、一緒に活動しませんか</p>
         </div>
 
 
-        <%# Skills Section %>
-        <%# Temporarily closed until additional content %>
-<%
-=begin %>
-        <div class="inner-card">
-          <h2>Skills</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-          <div class="skill-progress">
-            <i class="fas fa-gem"><bdi> Ruby & Rails</bdi></i>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
 
-          <div class="skill-progress">
-            <i class="fab fa-js"><bdi> JavaScript</bdi></i>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill-progress">
-            <i class="fab fa-html5"><bdi> HTML</bdi></i>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill-progress">
-            <i class="fab fa-css3-alt"><bdi> CSS & SCSS</bdi></i>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill-progress">
-             <i class="fab fa-react"></i><bdi> React</bdi></i>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
+      </div>
 
 
 
 
-        </div>
 
-        <div class="inner-card">
-          <h2>Education</h2>
-          <ul class="education-card">
-            <li><bdi>Le Wagon Web Bootcamp</bdi><br>
-            Full Stack Developer, Web Developer</li>
-            <li><bdi>Waseda University Graduate School of Asia Pacific Studies</bdi><br>
-            Master of Arts in International Relations</li>
-            <li><bdi>University of Washington</bdi><br>
-            Bachelor of Arts in International Relations</li>
-          </ul>
-        </div>
-
-        <div class="inner-card">
-          <h2>Languages</h2>
-
-
-          <div class="skill-progress">
-           <i class="fas fa-globe-americas"><bdi> English</bdi></i>
-             <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="skill-progress">
-
-           <i class="fas fa-globe-asia"></i><bdi> Japanese</bdi></i>
-             <div class="progress">
-            <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          <h5>Proficiency Test Scores</h5>
-          <ul class="education-card">
-            <li>TOEIC L&R Score: 990</li>
-            <li>TOEFL IBT Score: 108</li>
-            <li>ビジネス実務マナー技能検定試験 3級</li>
-          </ul>
-        </div>
-        <%
-=end %>
 
 
     </div>
   </div>
-</div>
+
 
 <%# <div class="experiences-container">
   <p>Render job experiencs in a card carousel</p>

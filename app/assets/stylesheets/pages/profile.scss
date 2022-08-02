@@ -25,6 +25,7 @@ body {
 .banner-top-video {
   border-top: solid 8px #04a564;
   margin-top: -24px;
+  margin: auto;
 
   video {
     display: block;
@@ -190,6 +191,36 @@ body {
     }
   }
 
+
+.location {
+i {
+  color: rgb(148, 147, 147);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+
+  a {
+    text-decoration: none;
+    color: rgb(148, 147, 147);
+  }
+
+  a:hover {
+    color: darkcyan;
+  }
+}
+
+bdi {
+  line-height: 24px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  margin-top: -3px;
+  font-family: "Lato", arial, sans-serif;
+}
+
+.fa-envelope:before {
+  margin-top: 3px;
+}
+
   .flex-child-right-column {
     // background-color: cadetblue;
     width: 370px;
@@ -202,34 +233,13 @@ body {
       padding: 16px;
       box-shadow: 1px 1px 3px 3px#3b3b3b55;
 
-      .location {
-        i {
-        color: rgb(148, 147, 147);
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 10px;
-        a {
-          text-decoration: none;
-          color: rgb(148, 147, 147);
-          }
-        a:hover {
-          color: darkcyan;
-        }
-        }
-        bdi {
-          line-height: 24px;
-          margin-left: 10px;
-          margin-bottom: 8px;
-          margin-top: -3px;
-          font-family: "Lato", arial, sans-serif;
-        }
-        .fa-envelope:before {
-          margin-top: 3px;
-        }
+
         // .fa-map-marker-alt {
         //   margin-top: 4px;
         // }
       }
+
+
 
       .skill-progress {
         // background-color: aquamarine;
