@@ -72,22 +72,23 @@
 
 // Chatroom CSS partials
 // @import "chatrooms.scss";
-@import "messages.scss";
+@import "messages";
 
 
 // Blogpost CSS partials
-@import "blogposts.scss";
-@import "posts.scss";
+@import "blogposts";
+@import "posts";
 
 // General CSS partials
-@import "experiences.scss";
-@import "projects.scss";
+@import "experiences";
+@import "projects";
 
 // Home //
 // @import "home.scss";
-@import "profile.scss"
-
-// @import "media-query.scss"
+@import "profile";
+@import "media-query"
 
 
 //Don't place semicollon on the last import
+// Don't put file extension, it will break
+// automatic css reload

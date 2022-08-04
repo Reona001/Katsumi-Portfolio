@@ -1,8 +1,12 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  config.sass.inline_source_maps = true
+  config.sass.quit = false
+  config.assets.compress = false
 
   # Settings specified here will take precedence over those in config/application.rb.
+  # config.serve_static_assets = false
 
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
@@ -73,6 +77,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+  # config.file_watcher = ActiveSupport::FileUpdateChecker
   config.file_watcher = ActiveSupport::FileUpdateChecker
 
   # Uncomment if you wish to allow Action Cable access from any origin.
