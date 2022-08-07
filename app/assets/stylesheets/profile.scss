@@ -1,11 +1,6 @@
 .contact-me {
-  position: absolute;
-  left: 425px;
-  top: 72px;
-  // right: auto;
-  // left: 1330px;
-  // top: 70px;
-  background-color: rgb(0, 139, 219);
+  position: relative;
+  background-color: #008bdb;
   width: 146px;
   height: 40px;
   border-radius: 6px;
@@ -88,33 +83,37 @@ html,body {
   background-color: whitesmoke;
   padding: 16px;
   box-shadow: 1px 1px 3px 3px#3b3b3b55;
-  z-index: -10;
   position: relative;
 }
 
 
 .profile-card {
-    border-radius: 3px;
-    margin: 16px;
+    margin-top: 46px;
     background-color: whitesmoke;
     padding: 16px;
     box-shadow: 1px 1px 3px 3px#3b3b3b55;
     z-index: 100;
-    background-color: rebeccapurple;
-    background: url('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4');
 }
 
 
-
+.video-bottom-hide {
+  background-color: #04a564;
+  position: absolute;
+  z-index: 10;
+  width: 100vw;
+  height: 560px;
+  top: 200px;
+}
 
 // Banner Video
 .banner-top-video {
   // border-top: solid 8px #04a564;
-  // position: absolute;
-  margin-top: -24px;
-  // margin: auto;
+  margin-top: 24px;
   z-index: -10;
   position: fixed;
+  top: 20px;
+  height: 10px;
+
 
 
   video {
