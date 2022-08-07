@@ -57,19 +57,22 @@
 
 // Outermost container for Home //
 html,body {
-  position: fixed;
+  position: relative;
   z-index: -200;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #04a564;
 }
+.notice {
+  margin: 0px;
+  padding: 0px;
+}
 
 .navbar {
   display: block;
-  top: -24px;
-  margin-top: 23px;
-  padding-top: 0px;
+  margin-top: 0px;
+  padding-top: 16px;
   width: 100% !important;
 }
 
@@ -88,7 +91,7 @@ html,body {
 
 
 .profile-card {
-    margin-top: 46px;
+    // margin-top: 46px;
     background-color: whitesmoke;
     padding: 16px;
     box-shadow: 1px 1px 3px 3px#3b3b3b55;
@@ -96,29 +99,43 @@ html,body {
 }
 
 
-.video-bottom-hide {
-  background-color: #04a564;
-  position: absolute;
-  z-index: 10;
-  width: 100vw;
-  height: 560px;
-  top: 200px;
-}
+// .video-bottom-hide {
+//   background-color: #04a564;
+//   position: sticky;
+//   z-index: 10;
+//   width: 100vw;
+//   height: 1000px;
+//   top: 200px;
+// }
 
 // Banner Video
 .banner-top-video {
   // border-top: solid 8px #04a564;
-  margin-top: 24px;
-  z-index: -10;
-  position: fixed;
+  // margin-top: 24px;
+  // z-index: -10;
+  position: relative;
   top: 20px;
-  height: 10px;
+  height: 42px;
+    overflow: hidden;
+      clip-path: 0 0;
+      transform: translatez(0);
 
 
 
   video {
     display: block;
     width: 100vw;
+    transform: translatez(0);
+      position: absolute;
+      top: -100%;
+      bottom: -100%;
+      left: -100%;
+      right: -100%;
+
+      margin: auto;
+
+      min-width: 100%;
+      min-height: 100%;
   }
 
 //   video.scale2{
