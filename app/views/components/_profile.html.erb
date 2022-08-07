@@ -10,9 +10,7 @@
         <%# Sometimes the cl_image_path will not work%>
         <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
 
-        <%# Age calculator %>
-          <% current_year = Time.new.year  %>
-          <% age = current_year - 1957  %>
+
           <div class="name-title">
             <h4 class="manifesto">地域の声を町政に!!</h4>
             <h2>川島町議会議員</h2>
@@ -20,7 +18,7 @@
               <h3>粕谷 克己</h3>
               <rt>かすやかつみ</rt>
             </ruby>
-            <!--<h5>1957年3月川島町上大屋敷生れ (現在<%=age%>歳)</h5>-->
+
 
 
             <%# Contact Me Button %>
@@ -51,18 +49,38 @@
 
         <div class="inner-card">
           <h4 class="keireki">経歴</h4>
-              <ul class="keireki-list">
-                <li>明治学院大学法学部卒</li>
-                <li>1979年4月川島町役場入庁</li>
-                <li>川島町会計管理者</li>
-                <li>総務課長（自主防災会の組織化）理事、主席専門員</li>
-                <li>（その他）</li>
-                <li>出丸地区横塚川改修促進協議会役員</li>
-                <li style="border-bottom: 1px solid rgb(149, 148, 148);">埼玉県立松山高校同窓会川島部会役員</li>
+              <ul class="keireki-list" style="margin-left:-20px;">
+                <%# Age calculator %>
+                <% current_year = Time.new.year  %>
+                <% age = current_year - 1957  %>
+                <li>1957年3月　川島町上大屋敷生れ (現在<%=age%>歳)</h5></li>
+                <li style="text-align: center;">（学歴）</li>
+                <li>1975年3月　埼玉県立松山高等学校卒</li>
+                <li>1979年3月　明治学院大学法学部卒</li>
+                <li style="text-align: center;">（主な経歴）</li>
+                <li>1979年4　月川島町役場入庁</li>
+                  <ul class="inner-list" style="margin-left:-20px;">
+                   <p>川島町会計管理者</p>
+                   <p>総務課長（東日本大震災から4年間防災担当）</p>
+                   <p>副教育長兼教育総務課長</p>
+                   <p>（小学校の規模適正化を推進）</p>
+                  </ul>
+                <li>2019年4月　川島町議会議員</li>
+                  <ul class="inner-list" style="margin-left:-20px;">
+                   <p>総務経済建設常任委員会委員</p>
+                   <p>地方創生・行財政特別委員会副委員長</p>
+                   <p>都市計画審議会委員</p>
+                   <p>安藤川・横塚川改修促進協議会委員</p>
+                  </ul>
+
+                  <li style="text-align: center;">（その他）</li>
+                   <li>出丸地区横塚川改修促進協議会役員</li>
+                   <li>埼玉県立松山高校同窓会川島部会役員</li>
+                  <li style="border-bottom: 1px solid rgb(149, 148, 148);">川島町ライオンズクラブ会長（令和4年7月〜）</li>
               </ul>
         </div>
 
-        <div class="inner-card">
+       <!--<div class="inner-card">
           <h2>議会役職</h2>
           <li>総務経済建設常任委員会委員</li>
           <li>議会報編集委員会委員</li>
@@ -70,7 +88,7 @@
           <li>地方創生・行財政特別委員会副委員長</li>
           <li>安藤川横塚川改修促進協議会委員</li>
           <li>議会災害対策会議委員</li>
-        </div>
+        </div>-->
 
         <div class="inner-card">
           <ul>

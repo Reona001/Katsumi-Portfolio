@@ -29,6 +29,12 @@
 }
 
 // button end here //
+    .inner-list {
+      // line-height: 15px;
+      p {
+        margin-bottom: 0px;
+      }
+    }
 
 .keireki {
   // background-color: rgba(109, 234, 155, 0.928);
@@ -43,6 +49,7 @@
     border-top: 1px solid rgb(149, 148, 148);
     // border-bottom: 1px solid rgb(149, 148, 148);
   }
+
 }
 
 .manifesto {
