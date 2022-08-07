@@ -1,16 +1,16 @@
 
 
-  <div class="banner-top-video">
-    <video autoplay loop muted id="myVideo">
-      <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
-    </video>
-  </div>
-
-
-
   <%# PROFILE BANNER %>
-  <div class="inner-card">
+  <div class="profile-card">
       <div class="profile-image-container">
+
+    <div class="banner-top-video">
+      <video autoplay loop muted id="myVideo">
+        <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
+      </video>
+    </div>
+
+
         <%# Sometimes the cl_image_path will not work%>
         <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
 
@@ -18,10 +18,14 @@
           <% current_year = Time.new.year  %>
           <% age = current_year - 1957  %>
           <div class="name-title">
+            <h4 class="manifesto">地域の声を町政に!!</h4>
             <h2>川島町議会議員</h2>
-            <h3>粕谷 克己（かつみ）</h3>
-            <h5>1957年3月川島町上大屋敷生れ (現在<%=age%>歳)</h5>
-            <div class="test-box">Hello </div>
+             <ruby>
+              <h3>粕谷 克己</h3>
+              <rt>かすやかつみ</rt>
+            </ruby>
+            <!--<h5>1957年3月川島町上大屋敷生れ (現在<%=age%>歳)</h5>-->
+
 
             <%# Contact Me Button %>
             <div class="contact-me">
