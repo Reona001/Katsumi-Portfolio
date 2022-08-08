@@ -1,35 +1,54 @@
-<%# Video %>
-<div class="banner-top-video">
-  <video autoplay loop muted id="myVideo">
-    <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
-  </video>
-</div>
+  <%# PROFILE BANNER %>
+  <div class="profile-card">
+      <div class="profile-image-container">
 
-<%# Inner Banner Content %>
-<div class="profile-banner2">
-  <div class="profile-box2">
-    <div class="profile-image-container2">
-    <%# Sometimes the cl_image_path will not work%>
-      <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
-        <div class="name-title">
-            <%# <h2>川島町議会議員</h2> %>
-            <h1>後援会情報</h1>
-        </div>
-          <%# Contact Me Button %>
-          <div class="contact-me">
-            <a class="button" href="mailto:kasuyakatsumi@gmail.com">
-            <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
-            </a>
-          </div>
-        </div>
-    </div>
+
+
+
+        <%# Sometimes the cl_image_path will not work%>
+        <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
+
+
+          <div class="name-title">
+            <h4 class="manifesto">地域の声を町政に!!</h4>
+            <h2>川島町議会議員</h2>
+             <ruby>
+              <h3>粕谷 克己</h3>
+              <rt>かすやかつみ</rt>
+            </ruby>
+
+
+
+            <%# Contact Me Button %>
+            <div class="contact-me">
+              <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+              <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+              </a>
+            </div>
+      </div>
   </div>
-</div>
+  </div>
+  <%# END %>
+
+  <div class="page-name-profile">
+    <h1>後援会情報</h1>
+  </div>
+
 
 
 <div class="content-container">
     <div class="master-flex-container">
-      <div class="flex-child-main-column2">
+    <div class="inner-card">
+          <h3>後援会所在</h3>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"><bdi><a href="https://www.google.com/maps/place/469+Kami%C5%8Dyashiki,+Kawajima,+Hiki+District,+Saitama+350-0142/@35.9584507,139.5183156,17z/data=!4m5!3m4!1s0x6018d0058dda05dd:0x33a113a5015fcb68!8m2!3d35.9584507!4d139.5183156">〒350-0142<br>埼玉県比企郡川島町上大屋敷469</a></bdi></i>
+            <h3>連絡先</h3>
+            <i class="fas fa-envelope"><bdi><a href="mailto:kasuyakatsumi@gmail.com">kasuyakatsumi@gmail.com</a></bdi></i>
+            <i>FAX 049(297)7655</i>
+            <p>地域発展のために、是非、粕谷かつみの後援会に入り、一緒に活動しませんか</p>
+          </div>
+        </div>
+
         <div class="inner-card">
           <object data="your_url_to_pdf" type="application/pdf">
             <iframe style="align-content: center;" src="https://drive.google.com/file/d/1losaKpxJ05MyTRFJTg-n2jERNt4vfjBh/preview" width="640" height="480" allow="autoplay"></iframe>
