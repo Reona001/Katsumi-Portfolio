@@ -8,6 +8,8 @@
 }
 
 
+
+
 .contact-me {
   position: relative;
   background-color: #008bdb;
@@ -74,6 +76,7 @@
 
 // Outermost container for Home //
 html,body {
+  scroll-behavior: smooth;
   position: relative;
   z-index: -200;
   height: 100%;

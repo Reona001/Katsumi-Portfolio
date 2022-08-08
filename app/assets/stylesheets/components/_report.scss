@@ -1,3 +1,40 @@
+  .scroll-box {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+
+.report-volumes {
+
+  background-color: #e8e8e8;
+  padding: 16px;
+  text-align: center;
+  color: #0dc070;
+  font-weight: bolder;
+  text-shadow: -1px 0 #cecece, 0 1px white, 1px 0 white, 0 -1px #ffffff, 0px 1px 3px #080807;
+  a {
+    margin: 1px;
+    background-color: #d6d6d6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+
+}
+
+    bdi {
+      color: rgb(3, 161, 3);
+      font-weight: bold;
+    }
+
+    bdi:hover {
+      color: rgb(132, 216, 5);
+    }
+
+
 
 .report-title {
   background-color: rgba(75, 233, 13, 0.695);
