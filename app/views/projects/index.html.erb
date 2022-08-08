@@ -2,14 +2,14 @@
 
 
 <%# Video %>
-<div class="banner-top-video">
+<!--<div class="banner-top-video">
   <video autoplay loop muted id="myVideo">
     <source src=<%= image_path('https://res.cloudinary.com/dvdm3zjhh/video/upload/v1653293967/development/forest_z0yde5.mp4')%> type="video/mp4">
   </video>
-</div>
+</div>-->
 
 <%# Inner Banner Content %>
-<div class="profile-banner2">
+<!--<div class="profile-banner2">
   <div class="profile-box2">
     <div class="profile-image-container2">
     <%# Sometimes the cl_image_path will not work%>
@@ -27,14 +27,49 @@
         </div>
     </div>
   </div>
-</div>
+</div>-->
+
+  <div class="profile-card">
+      <div class="profile-image-container">
+
+
+
+
+        <%# Sometimes the cl_image_path will not work%>
+        <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
+
+
+          <div class="name-title">
+            <h4 class="manifesto">地域の声を町政に!!</h4>
+            <h2>川島町議会議員</h2>
+             <ruby>
+              <h3>粕谷 克己</h3>
+              <rt>かすやかつみ</rt>
+            </ruby>
+
+
+
+            <%# Contact Me Button %>
+            <div class="contact-me">
+              <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+              <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+              </a>
+            </div>
+      </div>
+  </div>
+  </div>
+
+
+  <div class="page-name-profile">
+    <h1>議会活動報告</h1>
+  </div>
 
 
 <%# Main Container %>
 <div class="content-container2">
 
 
-      <div class="flex-child-main-column2">
+
         <div class="inner-card">
           <h2 class="vol-title">議会活動報告 Vol.3 発行:令和4年3月</h2>
           <p> 令和4年3月21日をもって埼玉県に対するまん延防止等重点措置は解除されましたが、
@@ -47,7 +82,7 @@
 
 
 
-          <p style="margin-top: -8px;">　　3月定例議会には令和4年度当初予算案や条例改正等の議案が上程され、3月16日審議の結果、全議案とも可決承認されました。  一般会計の予算総額は75億1,300万円(前年比8.3%増)で、第6次総合振興計画戦略目標にそった予 算が計上され、新型コロナ対策費用としては、ワクチン接種事業費6,074万円や学童保育トイレ改修費 498万円等が計上されました。  条例改正では、川島町廃校施設の開放及び施設の管理に関する条例が改正され、旧小学校の利活用を検証するための期間がさらに2か年延長されました。また、川島町水防団条例も改正され、水害警 戒出動の費用弁償が千円引き上げられ4,000円とになります。</p>
+          <p style="margin-top: -8px; margin-bottom: 46px;">　　3月定例議会には令和4年度当初予算案や条例改正等の議案が上程され、3月16日審議の結果、全議案とも可決承認されました。  一般会計の予算総額は75億1,300万円(前年比8.3%増)で、第6次総合振興計画戦略目標にそった予 算が計上され、新型コロナ対策費用としては、ワクチン接種事業費6,074万円や学童保育トイレ改修費 498万円等が計上されました。  条例改正では、川島町廃校施設の開放及び施設の管理に関する条例が改正され、旧小学校の利活用を検証するための期間がさらに2か年延長されました。また、川島町水防団条例も改正され、水害警 戒出動の費用弁償が千円引き上げられ4,000円とになります。</p>
           <div class="sub-yosan">
             <table>
                 <tr>
@@ -66,7 +101,7 @@
           </div>
 
             <div class="project-card">
-                  <h4 style="text-align: center;"> 国や県の水害対策事業も行われています</h4>
+                  <h4 class="report-title" style="text-align: center;"> 国や県の水害対策事業も行われています</h4>
 
 
                 <div class="master-image-box">
@@ -101,11 +136,10 @@
                     </div>
                   </div>
               </div>
-            </div>
           </div>
 
 
-  <div class="project-card">
+  <%# <div class="project-card"> %>
             <h4 class="report-title"> 一般質問で町政を問う</h4>
               <div class="project-content">
                 <h5 class="report-section-title" style="margin-top: -8px;">令和 3 年 6 月定例議会では</h5>
@@ -452,5 +486,5 @@
 
 
 
-  </div>
+  <%# </div> %>
 </div>

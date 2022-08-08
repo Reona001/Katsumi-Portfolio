@@ -1,3 +1,13 @@
+.page-name-profile {
+  background-color: #ffffff;
+  padding: 16px;
+  text-align: center;
+      color: #0dc070;
+        font-weight: bolder;
+        text-shadow: -1px 0 #cecece, 0 1px white, 1px 0 white, 0 -1px #ffffff, 0px 1px 3px #080807;
+}
+
+
 .contact-me {
   position: relative;
   background-color: #008bdb;
@@ -188,7 +198,7 @@ html,body {
   margin-left: -469px;
 }
 .profile-image-container {
-  background-color: rgb(250, 250, 250);
+  // background-color: rgb(250, 250, 250);
   height: 200px;
   width: 100%;
   left: 200px;
@@ -371,9 +381,9 @@ bdi {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(3.6px);
     -webkit-backdrop-filter: blur(3.6px);
-    padding: 24px;
-    padding-top: 16px;
-    margin: 8px;
+    // padding: 8px;
+    // padding-top: 16px;
+    // margin: 8px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -382,10 +392,12 @@ bdi {
     h4 {
       color: #686464;
       background-color: white;
-      height: 39px;
+      height: auto;
       padding: 8px;
       border-radius: 8px;
       margin-bottom: -4px;
+      margin-left: 12px;
+      margin-right: 12px;
     }
 
     // ul {
@@ -406,5 +418,6 @@ bdi {
       background-color: white;
       border-radius: 8px;
       padding: 24px;
+      margin: 12px;
     }
   }
