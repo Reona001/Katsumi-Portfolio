@@ -277,18 +277,19 @@ html,body {
 
 .location {
 i {
-  color: rgb(148, 147, 147);
+  color: rgb(53, 52, 52);
+  font-size: 18px;
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
 
   a {
     text-decoration: none;
-    color: rgb(148, 147, 147);
+    color: rgb(83, 82, 82);
   }
 
   a:hover {
-    color: darkcyan;
+    color: rgb(3, 168, 210);
   }
 }
 
