@@ -1,3 +1,12 @@
+.yosan-chart {
+  background-color: #cbecff;
+  padding: 24px;
+}
+
+.section-space {
+  margin-bottom: 36px;
+}
+
 .page-name-profile {
   background-color: #ffffff;
   padding: 16px;
@@ -130,33 +139,46 @@ html,body {
 
 // Banner Video
 .banner-top-video {
+  height: 140px;
+  overflow: hidden;
+  object-fit: fill;
   // border-top: solid 8px #04a564;
   // margin-top: 24px;
   // z-index: -10;
   position: relative;
   top: 20px;
-  height: 42px;
-    overflow: hidden;
-      clip-path: 0 0;
-      transform: translatez(0);
 
-
-
-  video {
-    display: block;
-    width: 100vw;
-    transform: translatez(0);
-      position: absolute;
-      top: -100%;
-      bottom: -100%;
-      left: -100%;
-      right: -100%;
-
-      margin: auto;
-
-      min-width: 100%;
-      min-height: 100%;
+  img {
+    margin-top: -68px;
+    margin-left: -120px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 300%;
+    width: 142vw;
   }
+
+    // overflow: hidden;
+    //   clip-path: 0 0;
+    //   transform: translatez(0);
+
+
+
+  // img {
+  //   display: block;
+  //   width: 100vw;
+  //   transform: translatez(0);
+  //     position: absolute;
+  //     top: -100%;
+  //     bottom: -100%;
+  //     left: -100%;
+  //     right: -100%;
+
+  //     margin: auto;
+
+  //     min-width: 100%;
+  //     min-height: 100%;
+  // }
 
 //   video.scale2{
 //   -moz-transform:scale(3);
