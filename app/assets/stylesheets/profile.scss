@@ -301,6 +301,8 @@ html,body {
 
 
 .location {
+margin-left: 48px;
+
 i {
   color: rgb(53, 52, 52);
   font-size: 18px;
@@ -447,3 +449,68 @@ bdi {
       margin: 12px;
     }
   }
+
+///// Shisakuteigen //////
+///
+.manifesto-shisaku-kondan {
+  text-align: center;
+  color: #04a564;
+  font-weight: bolder;
+    /* width and color */
+  background-color: rgb(216, 237, 184);
+  height: 100%;
+  padding: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 3px white, 0 1px white, 1px 0 white, 0 -1px white, ;
+}
+
+.manifesto-shisaku-main {
+  text-align: center;
+  color: rgb(36, 34, 151);
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 3px lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray,;
+}
+
+.manifesto-shisaku-sub {
+  text-align: center;
+  color: rgb(235, 107, 128);
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 3px lightgray, 0 1px lightgray, 1px 0 lightgray, 0 -1px lightgray, ;
+}
+
+.policy-box {
+  flex: 1 0 35%;
+  background-color: rgb(223, 223, 223);
+  height: auto;
+  padding: 16px;
+  border-radius: 3px;
+  margin: 16px;
+
+
+  h4 {
+    font-size: 26px;
+
+  }
+
+  .answer-box {
+      width: auto;
+      height: auto;
+      padding: 8px;
+      border-radius: 3px;
+      background-color: #04a564;
+    }
+}
+
+.policies-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+   .emphasis {
+     color: rgba(251, 93, 120, 0.858);
+   }

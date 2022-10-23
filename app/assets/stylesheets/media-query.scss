@@ -75,6 +75,19 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  .manifesto-shisaku-main {
+    font-size: 26px;
+  }
+
+  .manifesto-shisaku-sub {
+    font-size: 26px;
+  }
+
+  .policy-box {
+    flex: 1 0 50%;
+
+  }
   .navbar {
     padding: 10px;
   }

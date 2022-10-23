@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :koenkai, :shoko]
+  skip_before_action :authenticate_user!, only: [:home, :koenkai, :shoko, :shisakuteigen]
 
   def home
     # Using id: 3 could cause errors when db:drops

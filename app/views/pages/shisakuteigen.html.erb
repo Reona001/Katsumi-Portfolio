@@ -1,0 +1,224 @@
+<%# PROFILE BANNER %>
+  <div class="profile-card">
+      <div class="profile-image-container">
+
+
+
+
+        <%# Sometimes the cl_image_path will not work%>
+        <img class="user-profile-image" src="<%= image_path('https://res.cloudinary.com/dvdm3zjhh/image/upload/v1653281909/development/katsumi_profile_cstjem.png') %>">
+
+
+          <div class="name-title">
+            <h4 class="manifesto">地域の声を町政に!!</h4>
+            <h2>川島町議会議員</h2>
+             <ruby>
+              <h3>粕谷 克己</h3>
+              <rt>かすやかつみ</rt>
+            </ruby>
+
+
+
+            <%# Contact Me Button %>
+            <div class="contact-me">
+              <a class="button" href="mailto:kasuyakatsumi@gmail.com">
+              <p class="inner-text"><span class="fas fa-paper-plane"></span>お問い合わせ</p>
+              </a>
+            </div>
+      </div>
+  </div>
+  </div>
+  <%# END %>
+
+  <div class="page-name-profile">
+    <h1>施策提言</h1>
+  </div>
+
+
+  <div class="content-container">
+    <div class="master-flex-container">
+
+      <div class="flex-child-main-column">
+        <div class="inner-card">
+          <h4 class="manifesto-shisaku-main">地域の声を町政に！</h4>
+          <h4 class="manifesto-shisaku-sub">子育て支援ナンバーワンの町へ！</h4>
+          <h4 style="text-align: center; margin-top: 16px;">活力に満ち誰もが安心して暮らせる町<bdi class="emphasis">かわじま</bdi>を実現するための<bdi class="emphasis">８</bdi>つの施策</h4>
+          <p style="background-color: rgb(224, 224, 224); margin: 24px; padding: 16px; border-radius: 3px;">
+            平成２７年の町の人口は20,788人でした、人口減少が急激に進み、
+            令和４年９月の人口は19,252人と1,536人も減っています
+            また、児童生徒数も1,540人が令和４年は1,191人と350人近く減少、少子化の流れに
+            歯止めがかかりません。<bdi class="emphasis">このままでは町の賑わいも活力も失われ、町は衰退してしまいます。</bdi>
+          </p>
+
+          <div class="policies-flex">
+            <div class="policy-box">
+              <% order = 0  %>
+              <h4><label class="answer-box"><%= order +=1 %></label> 子育て支援<bdi class="emphasis">ナンバーワン</bdi>の町を目指します</h4>
+                <ul style="list-style-type:square">
+                  <li>給食費の無償化（園児、小中学生）</li>
+                  <li>出産の一時金を増額（最大10万円）</li>
+                  <li>町立保育園を核に質の高い保育を実施</li>
+                  <li>民意による学校規模適正化を推進</li>
+                  <li>全小学校で遠距離通学の自動を対象にスクールバスを運行</li>
+                  <li>学童保育の充実と施設整備</li>
+
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> <bdi class="emphasis">若者の移住・定住を全面的に支援</bdi>します</h4>
+                <ul style="list-style-type:square">
+                  <li>民間と連携し町が整備する戸建賃貸住宅（家賃月額５万程度）に移住した方を対象に20２０年間住み続けた場合には土地・建物を無償譲渡</li>
+                  <li>子育て世帯・新婚世帯が住宅を新築または購入した場合、定住促進奨励金５０万円を支給</li>
+                  <li>民間賃貸住宅（空き家を含む）に入居する新婚世帯・子育て世帯を対象に、家賃を２年間最大３６万円を助成</li>
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> <bdi class="emphasis">活力に満ちた町づくり</bdi>を行います</h4>
+                <ul style="list-style-type:square">
+                  <li>旧小学校を民間事業者と連携し地域活性化の施設として利活用</li>
+                  <li>地域のお祭りやコミュニティ活動の支援</li>
+                  <li>新たな観光拠点を設け、地域に眠る観光資源の発掘、名所化</li>
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> コロナ禍で疲弊した<bdi class="emphasis">家計や商工事業者の経済活動を支援</bdi>します</h4>
+                <ul style="list-style-type:square">
+                  <li>生活困窮世帯や子育て世帯の水道料金の軽減</li>
+                  <li>物価の高騰や年金の減額で影響を受ける高齢者等に、町商品券（1万円分）給付事業を実施</li>
+                  <li>地域経済の活性化を図るための商工事業者と連携し地域活性化事業を実施</li>
+                  <li>農業者に物価高・燃料高対策を実施</li>
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> 災害（水害）に備え<bdi class="emphasis">減災の町づくり</bdi>を実施します</h4>
+                <ul style="list-style-type:square">
+                  <li>全町民の個別避難行動計画を策定し、自主防災会と連携し<bdi class="emphasis">避難バスを運行</bdi></li>
+                  <li>国県と連携し、地域防災計画で危険箇所とされる堤防の強靭化を推進</li>
+                  <li>集中豪雨を念頭に、排水対策を緊急に見直し、排水路整備を実施</li>
+                  <li>東部地域の排水機能を高めるため排水機場の整備を推進</li>
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> <bdi class="emphasis">農業振興と調和</bdi>のとれた<bdi class="emphasis">地域開発</bdi>を推進します</h4>
+               <ul style="list-style-type:square">
+                  <li><bdi class="emphasis">基幹産業である稲作農業者の経営安定を図るため営農環境の整備と稼げる農業に向けた取組を支援</bdi></li>
+                  <li>新規就農者の定着を図るため、農地や住宅の総合的な支援体制を整備</li>
+                  <li>東部地域の雇用促進と活性化を図るため区域指定を見直し、積極的な企業誘致を実施</li>
+                  <li><bdi class="emphasis">企業誘致を促進するため税制面での優遇制度を創設</bdi></li>
+                  <li>若者が集るスポーツ施設や商業施設を誘致</li>
+                </ul>
+            </div>
+
+             <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> 安心して暮らせる<bdi class="emphasis">住みよい町づくり</bdi>を目指します</h4>
+               <ul style="list-style-type:square">
+                  <li>高齢者に分かりやすい行政・高齢者が元気な町づくりを推進</li>
+                  <li>地域の支えあいを支援し絆を深める取組</li>
+                  <li><bdi class="emphasis">障がい者の就労を支援</bdi></li>
+                  <li>生活道路や排水路の整備を優先的に実施</li>
+                </ul>
+            </div>
+
+            <div class="policy-box">
+              <h4><label class="answer-box"><%= order +=1 %></label> <bdi class="emphasis">町長給料を３割削減</bdi>します</h4>
+                <%# <ul style="list-style-type:square">
+                </ul> %>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="inner-card">
+
+        <h4 class="manifesto-shisaku-kondan">
+          地域の声を町づくりに反映するため町づくり<bdi class="emphasis">懇談会</bdi>を開催し、
+          地域に出向き<bdi class="emphasis">皆さんの声を直接伺い、
+          民意を反映した町づくり</bdi>を行います。
+        </h4>
+        </div>
+
+        <!--
+        <div class="inner-card">
+          <h4 class="keireki">経歴</h4>
+              <ul class="keireki-list" style="margin-left:-20px;">
+                <%# Age calculator %>
+                <% current_year = Time.new.year  %>
+                <% age = current_year - 1957  %>
+                <li>1957年3月　川島町上大屋敷生れ (現在<%=age%>歳)</h5></li>
+                <li style="text-align: center;">（学歴）</li>
+                <li>1975年3月　埼玉県立松山高等学校卒</li>
+                <li>1979年3月　明治学院大学法学部卒</li>
+                <li style="text-align: center;">（主な経歴）</li>
+                <li>1979年4　月川島町役場入庁</li>
+                  <ul class="inner-list" style="margin-left:-20px;">
+                   <p>川島町会計管理者</p>
+                   <p>総務課長（東日本大震災から4年間防災担当）</p>
+                   <p>副教育長兼教育総務課長</p>
+                   <p>（小学校の規模適正化を推進）</p>
+                  </ul>
+                <li>2019年4月　川島町議会議員</li>
+                  <ul class="inner-list" style="margin-left:-20px;">
+                   <p>総務経済建設常任委員会委員</p>
+                   <p>地方創生・行財政特別委員会副委員長</p>
+                   <p>都市計画審議会委員</p>
+                   <p>安藤川・横塚川改修促進協議会委員</p>
+                  </ul>
+
+                  <li style="text-align: center;">（その他）</li>
+                   <li>出丸地区横塚川改修促進協議会役員</li>
+                   <li>埼玉県立松山高校同窓会川島部会役員</li>
+                  <li style="border-bottom: 1px solid rgb(149, 148, 148);">川島町ライオンズクラブ会長（令和4年7月〜）</li>
+              </ul>
+        </div>-->
+
+
+       <!--<div class="inner-card">
+          <h2>議会役職</h2>
+          <li>総務経済建設常任委員会委員</li>
+          <li>議会報編集委員会委員</li>
+          <li>都市計画審議会委員</li>
+          <li>地方創生・行財政特別委員会副委員長</li>
+          <li>安藤川横塚川改修促進協議会委員</li>
+          <li>議会災害対策会議委員</li>
+        </div>
+
+        <div class="inner-card">
+          <ul>
+            <li> 地方創生・行財政特別委員会では</li>
+            <li>町が地方創生推進交付金を活用し地域商社の設立を 目指していることから、地域振興の役割を担う地域商 社がどのような組織として設置・運営されるのか先進 自治体の取組事例も含め調査研究を行いました。  視察地の茨城県桜川市では、市と商工会が出資(資 本金1,200万円)した株式会社クラセル桜川の経営状況 等の説明を受けました。クラセル桜川は地域の特産品 を販売する店舗を持ち、市と連携し観光資源の開発に も力を入れていました。</li>
+          </ul>
+        </div>-->
+           <%# Location Box %>
+        <div class="inner-card">
+          <div class="page-name-profile">
+            <h1 style="margin-bottom: 16px;">粕谷かつみ後援会</h1>
+          </div>
+          <div class="location">
+          <h3 style="margin-bottom: 24px;">後援会所在</h3>
+            <i class="fas fa-map-marker-alt"><bdi><a href="https://www.google.com/maps/place/484+Shimo%C5%8Dyashiki,+Kawajima,+Hiki+District,+Saitama+350-0144/@35.9590243,139.5136614,17z/data=!3m1!4b1!4m5!3m4!1s0x6018d00fb0c99f19:0x706807954cdc4bf1!8m2!3d35.95902!4d139.5158501/" target="_blank">川島町大字下大屋敷484</a></bdi></i>
+            <p>※ 住所をクリックすると地図が新しいタブで表示されます。</p>
+            <h3 style="margin-bottom: 16px;">連絡先</h3>
+            <i class="fas fa-envelope"><bdi><a href="mailto:kasuyakatsumi@gmail.com">kasuyakatsumi@gmail.com</a></bdi></i>
+             <p>※ メールアドレスをクリックすると既定のメールソフトが起動します。</p>
+            <i>電話 049(297)1957</i>
+            <i>FAX 049(297)7655</i>
+            <h5 class="join-message">変革を貫く実行力で 住みやすい地域づくり を目指します</h5>
+            <p class="join-message-light">地域発展のために、是非、粕谷かつみの後援会に入り、一緒に活動しませんか</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
