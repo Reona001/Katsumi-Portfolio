@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   #   get "/sign_out" => "sessions#destroy"
   # end
   # devise_for :users
-  get '/profile', to: "users#profile"
+  get '/profile', to: "pages#home"
   get '/koenkai', to: "pages#koenkai"
   get '/shoko', to: "pages#shoko"
   get '/shisakuteigen', to: "pages#shisakuteigen"
