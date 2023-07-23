@@ -39,16 +39,62 @@
       <div class="flex-child-main-column">
         <div class="inner-card">
           <h4 class="manifesto-shisaku-main">地域の声を町政に！</h4>
-          <h4 class="manifesto-shisaku-sub">子育て支援ナンバーワンの町へ！</h4>
-          <h4 style="text-align: center; margin-top: 16px;">活力に満ち誰もが安心して暮らせる町<bdi class="emphasis">かわじま</bdi>を実現するための<bdi class="emphasis">８</bdi>つの施策</h4>
-          <p style="background-color: rgb(224, 224, 224); margin: 24px; padding: 16px; border-radius: 3px;">
+          <%# <h4 class="manifesto-shisaku-sub">子育て支援ナンバーワンの町へ！</h4> %>
+          <h4 class="manifesto-shisaku-sub">活力あふれるかわじまを創生するための提言</h4>
+          <%# <h4 style="text-align: center; margin-top: 16px;">活力に満ち誰もが安心して暮らせる町<bdi class="emphasis">かわじま</bdi>を実現するための<bdi class="emphasis">８</bdi>つの施策</h4> %>
+          <%# <p style="background-color: rgb(224, 224, 224); margin: 24px; padding: 16px; border-radius: 3px;">
             平成２７年の町の人口は20,788人でしたが、人口減少が急激に進み、
             令和４年９月の人口は19,252人と1,536人も減っています
             また、児童生徒数も1,540人が令和４年は1,191人と350人近く減少、少子化の流れに
             歯止めがかかりません。<bdi class="emphasis">このままでは町の賑わいも活力も失われ、町は衰退してしまいます。</bdi>
-          </p>
+          </p> %>
+           <div class="policies-flex">
+            <div class="policy-box">
+              <% order = 0  %>
+              <h4><label class="answer-box"><%= order +=1 %></label> 子育て支援の充実を</h4>
+                <ul style="list-style-type:square">
+                  <li>給食費の無償化（園児、小中学生）</li>
+                  <li>町立保育園を核とした質の高い保育を</li>
+                  <li>全小学校で遠距離通学の児童を対象にスクールバスを運行</li>
+                </ul>
+            </div>
+              <div class="policy-box">
 
-          <div class="policies-flex">
+              <h4><label class="answer-box"><%= order +=1 %></label> 若者が住みたいと思う町づくりを</h4>
+                <ul style="list-style-type:square">
+                  <li>若者の移住・定住を全面的に支援（定住促進用の住宅を整備・新規就農者の住環境も支援）</li>
+                </ul>
+            </div>
+              <div class="policy-box">
+
+              <h4><label class="answer-box"><%= order +=1 %></label> 誰もが安心して住める町づくりを</h4>
+                <ul style="list-style-type:square">
+                  <li>災害（水害）に備えた減災の町づくりを目指します（堤防の強靭化、排水対策を国に要請）</li>
+                  <li>旧小学校を民間事業者と連携し地域活性化の施設として利活用・地域の賑わいも創設（若者の起業支援・スタートアップ企業を誘致、農産物直売施設も整備）</li>
+                </ul>
+            </div>
+              <div class="policy-box">
+
+              <h4><label class="answer-box"><%= order +=1 %></label> 農業振興と調和のとれた地域開発を</h4>
+                <ul style="list-style-type:square">
+                  <li>東部地域の雇用促進と活性化を図るため、区域指定の見直しと積極的な企業誘致を目指します</li>
+                </ul>
+            </div>
+              <div class="policy-box">
+
+              <h4><label class="answer-box"><%= order +=1 %></label> 誰もがが安心して暮らせる町づくりを</h4>
+                <ul style="list-style-type:square">
+                 <li>高齢者が活躍する元気な町づくりを推進</li>
+                 <li>障がい者の就労支援を行います</li>
+                 <li>生活道路や排水路の整備の促進</li>
+                </ul>
+            </div>
+
+
+            </div>
+            </div>
+
+        <!---  <div class="policies-flex">
             <div class="policy-box">
               <% order = 0  %>
               <h4><label class="answer-box"><%= order +=1 %></label> 子育て支援<bdi class="emphasis">ナンバーワン</bdi>の町を目指します</h4>
@@ -130,14 +176,15 @@
 
           </div>
         </div>
+        -->
 
         <div class="inner-card">
 
-        <h4 class="manifesto-shisaku-kondan">
+        <%# <h4 class="manifesto-shisaku-kondan">
           地域の声を町づくりに反映するため町づくり<bdi class="emphasis">懇談会</bdi>を開催し、
           地域に出向き<bdi class="emphasis">皆さんの声を直接伺い、
           民意を反映した町づくり</bdi>を行います。
-        </h4>
+        </h4> %>
           <img class="content-image" src="https://lh4.googleusercontent.com/w6rpZHW_mc3aNj-hr_fSuu4x5V14iED2_-xvJ9LN3AGWru0n9hf1m4BEEvxdGJdc5eM=w2400">
         </div>
 
