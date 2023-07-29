@@ -5,6 +5,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Bootstrap
 # gem 'bootstrap', '~> 5.1.3'
 
+# Redirecting
+gem 'rack-rewrite'
+
 # active record management
 gem 'activerecord-reset-pk-sequence'
 
