@@ -7,6 +7,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Redirecting
 gem 'rack-rewrite'
+gem 'rack-ssl-enforcer'
+
 
 # active record management
 gem 'activerecord-reset-pk-sequence'
