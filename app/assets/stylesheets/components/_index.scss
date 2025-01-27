@@ -4,6 +4,46 @@
 @import "navbar";
 
 
+.pdf-container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1000px;
+  /* Increased from 800px */
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+}
+
+.pdf-header {
+  background-color: lightblue;
+  /* Highlight background for the header */
+  padding: 8px 16px;
+  border-radius: 8px 8px 0 0;
+  /* Rounded corners at the top */
+  text-align: center;
+  /* Center-align the text */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for the header */
+}
+
+.pdf-header h2 {
+  margin: 0;
+  color: darkblue;
+  /* Match sub-section-title color */
+  font-size: 20px;
+  /* Slightly larger font for emphasis */
+  font-weight: bold;
+  /* Bold for clarity */
+}
+
+embed {
+  border: 1px solid #ccc;
+  /* Border around the PDF viewer */
+  border-radius: 0 0 8px 8px;
+  /* Match the rounded corners */
+}
+
 .join-message {
   background-color: yellow;
   padding: 8px;
