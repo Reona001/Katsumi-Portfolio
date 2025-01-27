@@ -16,5 +16,11 @@
   "devDependencies": {
     "@webpack-cli/serve": "^1.7.0",
     "webpack-dev-server": "^3"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "7.x"
   }
+
+
 }
