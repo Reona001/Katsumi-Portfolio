@@ -20,7 +20,10 @@
   "engines": {
     "node": "16.x",
     "npm": "7.x"
-  }
+  },
+  "scripts": {
+  "postinstall": "npx browserslist@latest --update-db"
+}
 
 
 }
