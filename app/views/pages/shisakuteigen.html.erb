@@ -27,13 +27,16 @@
   </div>
   </div>
   <%# END %>
-  <div class="page-name-profile">
+  <%# <div class="page-name-profile">
     <h1>町議会報告開催予定</h1>
-  </div>
+  </div> %>
+
+<%
+=begin %>
   <div class="pdf-container">
     <div class="pdf-header">
       <div id="vol-9"></div>
-      <h2>開催予定：令和7年　4月5日（土）午後５時〜</h2>
+      <h2>開催予定：令和7年4月5日（土）午後５時〜</h2>
     </div>
     <iframe
       <%# src="https://docs.google.com/viewer?srcid=10v2lKOq9IuIjw6RGeHTQxG7JeK0BOjeX&pid=explorer&efh=false&a=v&chrome=false&embedded=true" %>
@@ -44,6 +47,10 @@
       style="border: none;">
     </iframe>
   </div>
+  <%
+=end %>
+
+
 
   <div class="page-name-profile">
     <h1>施策提言</h1>
@@ -55,57 +62,101 @@
 
       <div class="flex-child-main-column">
         <div class="inner-card">
-          <h4 class="manifesto-shisaku-main">地域の声を町政に！</h4>
+          <h4 class="manifesto-shisaku-main">消滅可能性自治体から脱却し、次世代につなぐ活力ある地域を築きます！</h4>
           <%# <h4 class="manifesto-shisaku-sub">子育て支援ナンバーワンの町へ！</h4> %>
           <h4 class="manifesto-shisaku-sub">活力あふれるかわじまを創生するための提言</h4>
           <%# <h4 style="text-align: center; margin-top: 16px;">活力に満ち誰もが安心して暮らせる町<bdi class="emphasis">かわじま</bdi>を実現するための<bdi class="emphasis">８</bdi>つの施策</h4> %>
-          <%# <p style="background-color: rgb(224, 224, 224); margin: 24px; padding: 16px; border-radius: 3px;">
-            平成２７年の町の人口は20,788人でしたが、人口減少が急激に進み、
-            令和４年９月の人口は19,252人と1,536人も減っています
-            また、児童生徒数も1,540人が令和４年は1,191人と350人近く減少、少子化の流れに
-            歯止めがかかりません。<bdi class="emphasis">このままでは町の賑わいも活力も失われ、町は衰退してしまいます。</bdi>
-          </p> %>
+          <p style="background-color: rgb(255, 255, 255); margin: 24px; padding: 16px; border-radius: 3px;">
+            人口戦略会議は、全国1729 自治体の4割は<bdi class="emphasis">2050年までに20 代から30代の女性が半減し「最終的には消滅する可能性がある」とした報告書を公表</bdi>しています。 川島町は消滅可能性自治体（県内16団体）から脱却できず、超少子高齢化の課題が顕在化しています。 他方、行政施策を総動員し、消滅可能性自治体から脱却した市町村（県内６団体）もあります。 町も、<bdi class="emphasis">「若い世代が就職を機に町を離れる」</bdi>と分析しており、<bdi class="emphasis">若者の定住促進が最優先の課題です。</bdi>私は、女性の視点に立った「子育て環境の重要性」を繰り返し提唱してきましたが、改善が進まず、県平均を大幅に下回る<bdi class="emphasis">合計特殊出生率の推移（令和5年度は0.54 県下ワースト2位）</bdi>からは、非常に厳しい状況下にあると認識しています。 この状況を憂い、<bdi class="emphasis">「何としても、消滅可能性自治体から脱却させること」が議員としての使命</bdi>と考え、活動してまいりました。 今回、町が存続可能性自治体として光り輝き続けるため、私は、次の<bdi class="emphasis">7項目の施策を提言します</bdi>。
+
+
+
+          </p>
            <div class="policies-flex">
             <div class="policy-box">
               <% order = 0  %>
-              <h4><label class="answer-box"><%= order +=1 %></label> 子育て支援の充実を</h4>
+              <h4></label> 安心して出産・子育てができる町を目指します</h4>
+                <p>【子育て環境の充実】</p>
+
                 <ul style="list-style-type:square">
-                  <li>給食費の無償化（園児、小中学生）</li>
-                  <li>町立保育園を核とした質の高い保育を</li>
-                  <li>全小学校で遠距離通学の児童を対象にスクールバスを運行</li>
+                  <li>妊娠・出産費用の負担軽減のための制度を充実します。</li>
+                  <li>町立保育園と認定こども園を核とした質の高い保育の実施</li>
+                  <li>学童保育の充実と施設整備を行います。</li>
+                  <li>女性の意見を大切にする行政を目指します。</li>
+                  <li>女性が活躍しやすい環境づくりを推進するため女性活躍推進室を設けます。</li>
+                  </ul>
+                <p>【教育環境の充実】</p>
+                <ul style="list-style-type:square">
+                  <li>給食費の無償化(園児、小中学生)</li>
+                  <li>全小学校でスクールバスを運行</li>
                 </ul>
             </div>
               <div class="policy-box">
 
-              <h4><label class="answer-box"><%= order +=1 %></label> 若者が住みたいと思う町づくりを</h4>
+              <h4></label> 若者の移住・定住を全面的に支援します</h4>
                 <ul style="list-style-type:square">
-                  <li>若者の移住・定住を全面的に支援（定住促進用の住宅を整備・新規就農者の住環境も支援）</li>
+                  <li>戸建て賃貸住宅を整備し、若者の転入促進を図ります。
+                      長期居住者(２０年)には土地・建物を無償譲渡できる制度を新設。
+                  </li>
+                  <li>
+                    若者の通勤・通学の利便性の向上を目指します。また、自動運転車両等の活用も図ります。
+                  </li>
+                  <li>通勤渋滞緩和のため出丸橋の永久橋化を目指します。</li>
                 </ul>
             </div>
               <div class="policy-box">
 
-              <h4><label class="answer-box"><%= order +=1 %></label> 誰もが安心して住める町づくりを</h4>
+              <h4></label> コミュニティ活動を支援し地域の活性化を図ります</h4>
+               <p>【子育て環境の充実】</p>
                 <ul style="list-style-type:square">
-                  <li>災害（水害）に備えた減災の町づくりを目指します（堤防の強靭化、排水対策を国に要請）</li>
-                  <li>旧小学校を民間事業者と連携し地域活性化の施設として利活用・地域の賑わいも創設（若者の起業支援・スタートアップ企業を誘致、農産物直売施設も整備）</li>
+                  <li>廃校を有効利活し地域の活性化を図ります。）</li>
+                  <li>地域のお祭りやコミュニティ活動を支援します。</li>
+                  <li>新たな観光拠点を設け、地域に眠る観光資源の発掘・名所化を行います。</li>
+                  <li>商工事業者と連携し地域活性化事業を推進します。</li>
                 </ul>
             </div>
               <div class="policy-box">
 
-              <h4><label class="answer-box"><%= order +=1 %></label> 農業振興と調和のとれた地域開発を</h4>
+              <h4></label> 災害（水害）に備えた減災の町づくりを行います</h4>
                 <ul style="list-style-type:square">
-                  <li>東部地域の雇用促進と活性化を図るため、区域指定の見直しと積極的な企業誘致を目指します</li>
+                  <li>全町民の個別避難行動計画を策定します。</li>
+                  <li>自主防災会と連携した避難バスの運行</li>
+                  <li>国県と連携した堤防の強靭化</li>
+                  <li>減災を考えた排水路整備の実施</li>
                 </ul>
             </div>
-              <div class="policy-box">
+            <div class="policy-box">
+              <h4></label> 農業振興と調和のとれた地域開発を推進します</h4>
+                <ul style="list-style-type:square">
+                 <li>営農環境の整備と稼げる農業の取組みを支援</li>
+                 <li>新規就農者への総合的な支援体制の整備</li>
+                 <li>東部地域の開発と企業誘致により雇用促進を図ります。</li>
+                 <li>若者が集えるスポーツ施設や商業施設を誘致します。</li>
+                 <li>地域経済活性化の起爆剤とし、圏央道川島ICに隣接した道の駅を整備します。</li>
+                </ul>
+            </div>
 
-              <h4><label class="answer-box"><%= order +=1 %></label> 誰もがが安心して暮らせる町づくりを</h4>
+            <div class="policy-box">
+              <h4></label> 誰もが安心して暮らせる町を目指します</h4>
                 <ul style="list-style-type:square">
-                 <li>高齢者が活躍する元気な町づくりを推進</li>
-                 <li>障がい者の就労支援を行います</li>
-                 <li>生活道路や排水路の整備の促進</li>
+                 <li>高齢者に分かりやすい行政・元気な町づくりを推進します。</li>
+                 <li>支え合いや絆を深める取り組みを支援するとともに、防犯対策にも取り組みます。</li>
+                 <li>障がい者の就労支援を強化</li>
+                 <li>生活道路や排水路の整備を優先し、生活環境の改善を図ります。</li>
+                 <li>高齢者等交通弱者の足とし、スクールバスを活用したコミュニティバスを運行します。</li>
                 </ul>
             </div>
+
+             <div class="policy-box">
+              <h4></label> 町の行財政改革に取り組みます</h4>
+                <ul style="list-style-type:square">
+                 <li>人口減少が進んでいるにもかかわらず予算規模が拡大していることを踏まえ、町の行財政改革に取り組みます。す。</li>
+                 <li>総合振興計画（後期基本計画）の見直しにあたり、現在行っている事業内容を見直し、将来に大きな財政負担を残さないように、持続可能な行政運営を目指します。</li>
+                 <li>町職員の成長やモチベーション向上に寄与する働き方改革を進めます。</li>
+                 <li>町長給料を3割削減し、給食費無償化の財源の一助とします。</li>
+                </ul>
+            </div>
+
 
 
             </div>
@@ -194,6 +245,22 @@
           </div>
         </div>
         -->
+
+        <div class="pdf-container">
+          <div class="pdf-header">
+          <div id="vol-11"></div>
+          <h2>令和7年 - 討議資料</h2>
+          </div>
+            <iframe
+
+            src="https://docs.google.com/viewer?srcid=19Uh3VGTNS82vy1SuBwOKNEnFh6jOgP1k&pid=explorer&efh=false&a=v&chrome=false&embedded=true"
+            width="100%"
+            height="600px"
+            width="1000px"
+            style="border: none;">
+            </iframe>
+        </div>
+
 
         <div class="inner-card">
 
